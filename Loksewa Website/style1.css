@@ -41,24 +41,56 @@ background-color: #c9494c;
     width:70px;
     margin-bottom: 100px;
 }
-.searchbox{
-    width:70px;
+
+.search-box{
+    position:absolute;
+    top:5%;
+    left:80%;
+    transform:translate(-50%,-50%) ;
+    height:10px;
+    border-radius:50px;
     
+    
+}
+.btn{
+    color:aqua;
+    float:right;
+    width:0.7px;
+    height: 0px;
+    display:flex;
+  margin-bottom: 40px;
+   display: flex;
+   
+}
+.navbar-search{
+    float:left;
+    color:white;
+    font-size:5px;
+    transition: 0.4s;
+    width:90px;
+}
+
+/*searchbox{
+    width:70px;
     border-radius:30px;
     display:flex;
     justify-content: space-between;
-    margin-right: 100px;
-
-   
     
+    
+    .navbar-search{
+        margin-left: 10px;
+        
+    }
+
+
     i{
         color:aqua;
-        height:20px;
-        cursor:pointer;
-
+        height:25px;
+        margin-right:40px;
+        
     }
     
-}
+}*/
 
 .navbar-toggle{
     display:block;
@@ -93,110 +125,3 @@ background-color: #c9494c;
 
 
 
-/*
-
-.navbar-search{
-    font-size: 15px;
-    padding:4px 10px;
-    border:none;
-    border-radius: 14px;
-margin:5px auto;
-}
-.navbar-search > .btn  {
-    height:20px;
-    width:90px;
-    
-  
-}
-.nav-links{
-    display:flex;
-    list-style: none;
-}
-..nav-links li:{
-    margin-right: 15px;
-}
-.nav-links li:last-child{
-    margin-right:0px;
-}
-.nav-links li a{
-    color:#fff;
-    font-size: 15px;
-    text-decoration: none;
-    font-weight: bold;
-    padding:0px 5px;
-    transition:0.3s ease;
-}
-.nav-links li  a:hover{
-    color:#ffc107;
-
-}
-.nav-links li.active{
-    color:#ffc107;
-}
-.mobile-menu{
-    display:none;
-    cursor:pointer;
-}
-.mobile-menu span{
-    display:flex;
-    width:25px;
-    height:3px;
-    background-color: #fff;
-    margin-bottom: 5px;
-}
-.order-button{
-    padding:10px 20px;
-    background-color:#ff8c00;
-    color:whitesmoke;
-    text-decoration:none ;
-    border-radius:5px;
-    font-weight:bold;
-    transition:0.3s ease;
-}
-.order-button:hover{
-    background-color:#ff8c00 ;
-}
-.acc li{
-    list-style: none;
-
-}
-.acc li i{
-    height:20px;
-
-}
-.acc-button:hover{
-    background-color: #ff8c00;
-}
-@media screen  and (max-width:565px){
-    .navbar{
-        padding:15px 30px;
-
-    }
-    .nav-links{
-        display:flex;
-        flex-direction:column;
-        position:absolute;
-        top:60px;
-        left:0;
-        width:100%;
-        background-color: #444;
-        padding:20px 25px;
-        margin-top:5px;
-
-    }
-    .nav-links li{
-        padding:15px 0px;
-    }
-    .mobile-menu{
-display:block;
-    }
-    .nav-active{
-        display:block;
-    }
-}
-logo a{
-    text-decoration: none;
-    font-size:30px;
-    font-weight: bold;
-    color:#fff;
-}*/
