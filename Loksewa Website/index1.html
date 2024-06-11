@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>suchana</title>
+<link rel="stylesheet" href="style1.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+<nav class="navbar">
+
+    
+    <ul class="navbar-menu">
+        <li><a href="#"class="active">Home</a></li>
+        <li><a href="#">News and notice</a></li>
+        <li><a href="#">Practise</a></li>
+        <li><a href="#">About us</a></li>
+          
+    <span>
+        <a href="#"class="Account-icon"><i class="fa fa-user"></i></a>
+         <li><a href="#"class="Account">Account</a></li>
+        </span>
+    </ul>
+    <div class="searchbox">
+    <div class="navbar-search">
+
+        <input type="text" placeholder="Search">
+    </div>
+       <div class="btn">
+        <a href="#"><i class="fa fa-search"></i></a>
+       </div>
+    </div>
+</div>
+   <div class="navbar-toggle"id="mobile-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+
+   </div>
+</nav>
+
+    <script src="script1.js">
+        const mobileMenu=document.getElementById('.mobile-menu');
+const navLinks = document.querySelector('.navbar-menu');
+mobileMenu.addEventListener('click', () => {
+    navbarMenu.classList.toggle('active');
+});
+    </script>
+</body>
+</html>
