@@ -5,6 +5,8 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
+
+
 .navbar{
     display:flex;
     justify-content: space-between;
@@ -16,10 +18,28 @@
    
 }
 
+.logo{
+    font-size: 18px;
+    color:#fff;
+    text-decoration: none;
+    padding:10px 20px;
+    height:100%;
+    display:flex;
+    align-items:center;
+    transition:0.3 ease;
+}
+
 .navbar-menu{
    display:flex;
    list-style:none;
+   justify-content: center;
+   align-items: center;
 }
+
+.accountSection > li > a > i{
+    margin-left: 0.5rem;
+}
+
 .navbar-menu li{
     height:45px;
 }
@@ -36,11 +56,8 @@
 .navbar-menu li a:hover{
 background-color: #c9494c;
 }
-.Account-icon{
-    height:100px;
-    width:70px;
-    margin-bottom: 100px;
-}
+
+
 .searchbox{
     width:70px;
     
