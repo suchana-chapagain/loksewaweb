@@ -397,6 +397,7 @@ nav .search_box span:hover::after{
 
     .logoDesc{
         font-size: 0.7rem;
+        margin-left: -20px;
     }
 
     .logoDesc > p{
