@@ -197,7 +197,7 @@ nav .search_box span:hover::after{
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 480px) {
     .navbar{
         display: block;
         height: 90px;
