@@ -144,7 +144,7 @@ nav .search_box span:hover::after{
 
 
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 480px) {
     .navbar{
         display: block;
         height: 90px;
@@ -196,6 +196,60 @@ nav .search_box span:hover::after{
         right: 15px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .navbar{
+        display: block;
+        height: 90px;
+    }
+
+    .navbar .logo{
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav .search_box{
+        width: 95%;
+        display: inline-flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    nav .search_box input{
+        width: 90%;
+    }
+
+    nav .search_box span{
+        padding: 7px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 250px;
+        left: -105%;
+        width: 98.5%;
+        background-color: #333;
+        transition: all 0.5s ease;
+        padding-left: 0;
+    }
+    .nav-links li {
+        margin: 15px 0;
+        text-align: center;
+       
+    }
+    .nav-links.active {
+        left: 0;
+    }
+    .burger {
+        position: absolute;
+        display: block;
+        top: 205px;
+        right: 15px;
+    }
+}
+
 
 /* Burger menu animation */
 .burger.toggle .line1 {
