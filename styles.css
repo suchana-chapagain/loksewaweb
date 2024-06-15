@@ -1,3 +1,6 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
 * {
     margin: 0;
     font: Arial;
@@ -411,5 +414,56 @@ nav .search_box span:hover::after{
 
 .burger.toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
+}
+
+a{
+    text-decoration: none;
+}
+
+header {
+    width: 100vw;
+    height: 80vh;
+    background-image: url(assets/bg.png);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+}
+
+.heroText{
+    margin-bottom: 120px;
+    text-align: center;
+    width: 80%;
+}
+
+.heroText h1{
+    font-size: 6vmin;
+    color: beige;
+}
+
+.line{
+    width: 40%;
+    height: 4px;
+    background: #fc036b;
+    margin: 30px auto;
+    border-radius: 5px;
+}
+
+.heroText h3{
+    font-size: 3vmin;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    color:whitesmoke;
+}
+
+.btn{
+    padding: 8px 15px;
+    background: #fc036b;
+    border-radius: 30px;
+    color: whitesmoke;
 }
 
