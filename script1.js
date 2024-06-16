@@ -1,13 +1,3 @@
-const burger = document.querySelector(".burger");
-const navLinks = document.querySelector(".nav-links");
-
-burger.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-  burger.classList.toggle("toggle");
-});
-
-// This is script file
-
 $('.testimonials-container').owlCarousel({
     loop:true,
     autoplay:true,
@@ -30,5 +20,3 @@ $('.testimonials-container').owlCarousel({
         },
     }
 })
-
-
