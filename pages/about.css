@@ -278,7 +278,7 @@
     border-radius: 50%;
 }
 
-@media screen and (max-width: 410px){
+@media screen and (max-width: 370px){
     .abouthead h1{
         font-size: 4.5rem;
         text-align: center;
