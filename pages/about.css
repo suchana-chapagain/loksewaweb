@@ -278,16 +278,14 @@
     border-radius: 50%;
 }
 
-@media screen and (max-width: 370px){
+
+
+@media screen and (max-width: 768px) and (min-width: 370px){
     .abouthead h1{
         font-size: 4.5rem;
         text-align: center;
     }
 
-}
-
-
-@media screen and (max-width: 768px) and (min-width: 370px){
     .workDesc{
         height: 400px;
     }
