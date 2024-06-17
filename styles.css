@@ -197,6 +197,15 @@ nav ul {
   margin-left: 25px;
 }
 
+.nav-links li a:is(:link, :active, :visited).active{
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 10px;
+  color: black;
+  cursor: pointer;
+  background-color: #fff;
+}
+
 .nav-links a {
   color: white;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
