@@ -288,13 +288,10 @@
         font-size: 3.5rem
     }
 
-    .ourDesc{
-        height: 1100px;
-    }
 }
 
 
-@media screen and (max-width: 768px) and (min-width: 370px){
+@media screen and (max-width: 768px) and (min-width: 410px){
     .workDesc{
         height: 400px;
     }
@@ -343,7 +340,7 @@
     }
 
     .ourDesc{
-        height: 1000px;
+        height: 1200px;
     }
 
     .ourDesc .orow{
