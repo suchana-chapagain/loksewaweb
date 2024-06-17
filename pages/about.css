@@ -278,7 +278,14 @@
     border-radius: 50%;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 410px){
+    .abouthead h1{
+        font-size: 5rem;
+    }
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 370px){
     .workDesc{
         height: 400px;
     }
@@ -293,7 +300,7 @@
     }
 
     .services .srow .scol img{
-        width: 300px;
+        width: 250px;
         height: 250px;
     }
 
