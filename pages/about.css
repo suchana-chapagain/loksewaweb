@@ -282,6 +282,10 @@
     .abouthead h1{
         font-size: 5rem;
     }
+
+    .capabilities h1{
+        font-size: 3.5rem
+    }
 }
 
 
