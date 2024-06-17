@@ -284,10 +284,6 @@
         text-align: center;
     }
 
-    .capabilities h1{
-        font-size: 3.5rem
-    }
-
 }
 
 
@@ -312,6 +308,10 @@
 
     .capabilities{
     height: 500px;
+    }
+
+    .capabilities h1{
+        font-size: 3.5rem
     }
 
     .work{
