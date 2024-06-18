@@ -1,11 +1,11 @@
 .logoSection {
-    height: 8rem;
+    height: 130px;
     display: flex;
-    padding: 1rem;
+    padding: 15px;
     justify-content: space-evenly;
     align-items: center;
     background-color: blueviolet;
-    border-radius: 0rem 0rem 0rem 0rem;
+    border-radius: 0 0 0 0;
   }
   
   .image1 > a > img {
@@ -37,14 +37,14 @@
   
   .links > a {
     color: white;
-    padding: 2rem;
-    font-size: 1.5rem;
+    padding: 30px;
+    font-size: 25px;
   }
   
   .links > a:hover {
     color: #00b4d8;
-    padding: 2rem;
-    font-size: 1.5rem;
+    padding: 30px;
+    font-size: 25px;
   }
   
   @media only screen and (max-width: 768px) {
@@ -313,16 +313,16 @@
     }
   
     nav .search_box span {
-      padding: 7px;
+      padding: 6.5px;
     }
   
     .nav-links {
       display: flex;
       flex-direction: column;
       position: absolute;
-      top: 202px;
+      top: 200px;
       left: -105%;
-      width: 97.7%;
+      width: 97.8%;
       background-color: #333;
       transition: all 0.5s ease;
       padding-left: 0;
@@ -374,7 +374,7 @@
       position: absolute;
       top: 250px;
       left: -105%;
-      width: 98.6%;
+      width: 99.1%;
       background-color: #333;
       transition: all 0.5s ease;
       padding-left: 0;

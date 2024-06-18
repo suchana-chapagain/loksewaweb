@@ -8,7 +8,32 @@
 
 .container{
     width: 100%;
+    margin: auto;
     background-color: #f7f7f7;
+}
+
+.logoSection{
+    height: 150px !important;
+}
+
+@media screen and (max-width:1280px){
+    .logoSection{
+        height: 160px !important;
+    }
+
+    .nav-links{
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width:480px){
+    .logoSection{
+        height: 110px !important;
+    }
+
+    .nav-links{
+        width: 100% !important;
+    }
 }
 
 .abouthead{
@@ -222,7 +247,7 @@
 
 .ourDesc{
     width: 95%;
-    height: 600px;
+    height: 800px;
     margin: auto;
     display: flex;
     flex-direction: column;
