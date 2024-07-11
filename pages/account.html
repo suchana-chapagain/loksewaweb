@@ -1,104 +1,373 @@
 <!DOCTYPE html>
-<!-- Coding By CodingNepal - codingnepalweb.com -->
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Responsive Login and Signup Form </title>
-        <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      />
-        <link rel="stylesheet" href="account.css">
-        <link rel="stylesheet" href="../components/nav.css">
-        <link rel="stylesheet" href="../components/footer.css"> 
-        <!--JQuery Script--> 
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>       
-        
-        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'> 
-                        
-    </head>
-    <body>
-        <div id="nav-placeholder"></div>
-        <section class="container forms">
-            <div class="form login">
-                <div class="form-content">
-                    <header>Login</header>
-                    <form action="#">
-                        <div class="field input-field">
-                            <input type="email" placeholder="Email" class="input">
-                        </div>
-                        <div class="field input-field">
-                            <input type="password" placeholder="Password" class="password">
-                            <i class='bx bx-hide eye-icon'></i>
-                        </div>
-                        <div class="form-link">
-                            <a href="#" class="forgot-pass">Forgot password?</a>
-                        </div>
-                        <div class="field button-field">
-                            <button>Login</button>
-                        </div>
-                    </form>
-                    <div class="form-link">
-                        <span>Don't have an account? <a href="#" class="link signup-link">Sign Up</a></span>
-                    </div>
-                </div>
-                <div class="line"></div>
-                <div class="media-options">
-                    <a href="#" class="field facebook">
-                        <i class='bx bxl-facebook facebook-icon'></i>
-                        <span>Login with Facebook</span>
-                    </a>
-                </div>
-                <div class="media-options">
-                    <a href="#" class="field google">
-                        <img src="/assets/google.png" class="google-img">
-                        <span>Login with Google</span>
-                    </a>
-                </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="account.css" />
+    <link rel="stylesheet" href="../components/nav.css" />
+    <link rel="stylesheet" href="../components/footer.css" />
+    <!-- JQuery Script -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="nav-placeholder"></div>
+    <section class="container forms" id="loginForm">
+      <div class="form login">
+        <div class="form-content">
+          <header>Login</header>
+          <form action="#">
+            <div class="field input-field">
+              <input
+                type="email"
+                id="loginEmail"
+                placeholder="Email"
+                class="input"
+              />
             </div>
-            
-            <div class="form signup">
-                <div class="form-content">
-                    <header>Signup</header>
-                    <form action="#">
-                        <div class="field input-field">
-                            <input type="email" placeholder="Email" class="input">
-                        </div>
-                        <div class="field input-field">
-                            <input type="password" placeholder="Create password" class="password">
-                        </div>
-                        <div class="field input-field">
-                            <input type="password" placeholder="Confirm password" class="password">
-                            <i class='bx bx-hide eye-icon'></i>
-                        </div>
-                        <div class="field button-field">
-                            <button>Signup</button>
-                        </div>
-                    </form>
-                    <div class="form-link">
-                        <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
-                    </div>
-                </div>
-                <div class="line"></div>
-                <div class="media-options">
-                    <a href="#" class="field facebook">
-                        <i class='bx bxl-facebook facebook-icon'></i>
-                        <span>Login with Facebook</span>
-                    </a>
-                </div>
-                <div class="media-options">
-                    <a href="#" class="field google">
-                        <img src="/assets/google.png" alt="" class="google-img">
-                        <span>Login with Google</span>
-                    </a>
-                </div>
+            <div class="field input-field">
+              <input
+                type="password"
+                id="loginPassword"
+                placeholder="Password"
+                class="password"
+              />
+              <i class="bx bx-hide eye-icon"></i>
             </div>
-        </section>
-        <div id="footer-placeholder"></div>
-        <script src="accountScript.js"></script>
-        <!--Component Script-->
+            <div class="form-link">
+              <a href="#" class="forgot-pass">Forgot password?</a>
+            </div>
+            <div class="field button-field">
+              <button type="button" id="login">Login</button>
+            </div>
+          </form>
+          <div class="form-link">
+            <span
+              >Don't have an account?
+              <a href="#" class="link signup-link">Sign Up</a></span
+            >
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="media-options">
+          <a href="#" class="field github" id="github-login-btn">
+            <i class="bx bxl-github github-icon"></i>
+            <span>Login with GitHub</span>
+          </a>
+        </div>
+        <div class="media-options">
+          <a href="#" class="field google" id="google-login-btn">
+            <img src="/assets/google.png" class="google-img" />
+            <span>Login with Google</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="form signup">
+        <div class="form-content">
+          <header>Sign Up</header>
+          <form action="#">
+            <div class="field input-field">
+              <input
+                type="email"
+                id="signUpEmail"
+                placeholder="Email"
+                class="input"
+              />
+            </div>
+            <div class="field input-field">
+              <input
+                type="password"
+                id="signUpPassword"
+                placeholder="Create password"
+                class="password"
+              />
+              <i class="bx bx-hide eye-icon"></i>
+            </div>
+            <div class="field input-field">
+              <input
+                type="text"
+                id="signUpUsername"
+                placeholder="Create Username"
+                class="username"
+              />
+            </div>
+            <div class="field button-field">
+              <button type="button" id="signUp">Sign Up</button>
+            </div>
+          </form>
+          <div class="form-link">
+            <span
+              >Already have an account?
+              <a href="#" class="link login-link">Login</a></span
+            >
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="media-options">
+          <a href="#" class="field github" id="github-login-btn2">
+            <i class="bx bxl-github github-icon"></i>
+            <span>Login with GitHub</span>
+          </a>
+        </div>
+        <div class="media-options">
+          <a href="#" class="field google" id="google-login-btn2">
+            <img src="/assets/google.png" alt="" class="google-img" />
+            <span>Login with Google</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="welcomeUser" style="display: none">
+      <h1 id="welcomeText">Hello, <span id="userName">!</span></h1>
+      <h2>Welcome to advanced learning Experience! Let's start the journey!</h2>
+      <div id="container">
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-aqua">
+            <div class="inner">
+              <h3>Study</h3>
+              <p>Read and Prepare!</p>
+            </div>
+            <div class="icon">
+              <i class="fa fa-book"></i>
+            </div>
+            <a href="study.html" class="small-box-footer">
+              More info <i class="fa fa-arrow-circle-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-green">
+            <div class="inner">
+              <h3>Practice</h3>
+              <p>Make it Perfect!</p>
+            </div>
+            <div class="icon">
+              <i class="fa fa-note-sticky"></i>
+            </div>
+            <a href="practice.html" class="small-box-footer">
+              More info <i class="fa fa-arrow-circle-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-yellow">
+            <div class="inner">
+              <h3>News</h3>
+              <p>Stay Updated!</p>
+            </div>
+            <div class="icon">
+              <i class="fa fa-newspaper"></i>
+            </div>
+            <a href="news.html" class="small-box-footer">
+              More info <i class="fa fa-arrow-circle-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <button id="signOut"><span class="text">Sign Out</span></button>
+    </section>
+    <div id="footer-placeholder"></div>
+    <script src="accountScript.js"></script>
+    <!-- Component Script -->
     <script src="../component.js"></script>
-    </body>
+  </body>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
+    import {
+      getDatabase,
+      ref,
+      set,
+      update,
+      onValue,
+    } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-database.js";
+    import {
+      getAuth,
+      GithubAuthProvider,
+      GoogleAuthProvider,
+      signInWithPopup,
+      createUserWithEmailAndPassword,
+      signInWithEmailAndPassword,
+      onAuthStateChanged,
+      signOut,
+    } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js";
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyCFvgep4c6TFS8sRg92GBxM45r6lYeA63w",
+      authDomain: "loksewa-authentication.firebaseapp.com",
+      projectId: "loksewa-authentication",
+      storageBucket: "loksewa-authentication.appspot.com",
+      messagingSenderId: "325243528377",
+      appId: "1:325243528377:web:28214e9db9d4fa4680a768",
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const database = getDatabase(app);
+    const auth = getAuth();
+    const provider = new GoogleAuthProvider();
+    const githubProvider = new GithubAuthProvider();
+    auth.languageCode = "en";
+    const user = auth.currentUser;
+
+    const googleLogin = document.getElementById("google-login-btn");
+    const googleLogin2 = document.getElementById("google-login-btn2");
+
+    const githubLogin = document.getElementById("github-login-btn");
+    const githubLogin2 = document.getElementById("github-login-btn2");
+
+    document.getElementById("signUp").addEventListener("click", (e) => {
+      e.preventDefault();
+      var email = document.getElementById("signUpEmail").value;
+      var password = document.getElementById("signUpPassword").value;
+      var username = document.getElementById("signUpUsername").value;
+
+      createUserWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+          // Signed up
+          const user = userCredential.user;
+
+          set(ref(database, "users/" + user.uid), {
+            email: email,
+            username: username,
+          });
+
+          alert("Registered Successfully!");
+        })
+        .catch((error) => {
+          const errorMessage = error.message;
+          alert(errorMessage);
+        });
+    });
+
+    document.getElementById("login").addEventListener("click", (e) => {
+      e.preventDefault();
+      var email = document.getElementById("loginEmail").value;
+      var password = document.getElementById("loginPassword").value;
+
+      signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+          // Signed in
+          const user = userCredential.user;
+
+          const dt = new Date();
+          update(ref(database, "users/" + user.uid), {
+            last_login: dt,
+          });
+
+          fetchUsername(user.uid);
+        })
+        .catch((error) => {
+          const errorMessage = error.message;
+          alert(errorMessage);
+        });
+    });
+
+    googleLogin.addEventListener("click", function () {
+      signInWithPopup(auth, provider)
+        .then((result) => {
+          const credential = GoogleAuthProvider.credentialFromResult(result);
+          const user = result.user;
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+        });
+    });
+
+    googleLogin2.addEventListener("click", function () {
+      signInWithPopup(auth, provider)
+        .then((result) => {
+          const credential = GoogleAuthProvider.credentialFromResult(result);
+          const user = result.user;
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+        });
+    });
+
+    githubLogin.addEventListener('click', function() {
+      signInWithPopup(auth, githubProvider)
+  .then((result) => {
+    const credential = GithubAuthProvider.credentialFromResult(result);
+    const user = result.user;
+  }).catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+  });
+    })
+
+    githubLogin2.addEventListener('click', function() {
+      signInWithPopup(auth, githubProvider)
+  .then((result) => {
+    const credential = GithubAuthProvider.credentialFromResult(result);
+    const user = result.user;
+  }).catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+  });
+    })
+
+
+
+    document.getElementById("signOut").addEventListener("click", () => {
+      signOut(auth)
+        .then(() => {
+          document.getElementById("loginForm").style.display = "block";
+          document.getElementById("welcomeUser").style.display = "none";
+          // alert("Signed out successfully!");
+        })
+        .catch((error) => {
+          alert(error.message);
+        });
+    });
+
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        fetchUsername(user.uid);
+        updateUserProfile(user);
+        document.getElementById("loginForm").style.display = "none";
+        document.getElementById("welcomeUser").style.display = "block";
+      } else {
+        document.getElementById("loginForm").style.display = "block";
+        document.getElementById("welcomeUser").style.display = "none";
+      }
+    });
+
+    function fetchUsername(uid) {
+      const userRef = ref(database, "users/" + uid + "/username");
+      onValue(userRef, (snapshot) => {
+        const username = snapshot.val();
+        if (username) {
+          document.getElementById("userName").innerText = username;
+          document.getElementById(
+            "welcomeText"
+          ).innerText = `Hello, ${username}!`;
+        } else {
+          // alert("Username not found");
+        }
+      });
+    }
+
+    function updateUserProfile(user) {
+      const userName = user.displayName;
+      document.getElementById("userName").innerText = userName;
+    }
+
+  </script>
 </html>
