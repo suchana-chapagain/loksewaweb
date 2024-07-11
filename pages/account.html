@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Account</title>
-    <link rel="icon" type="image/favicon" href="../assets/Website Logo White.png">
+    <link
+      rel="icon"
+      type="image/favicon"
+      href="../assets/Website Logo White.png"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -45,7 +49,12 @@
               <i class="bx bx-hide eye-icon"></i>
             </div>
             <div class="form-link">
-              <a href="#" class="forgot-pass">Forgot password?</a>
+              <a
+                class="forgot-pass"
+                id="resetPass"
+                style="cursor: pointer"
+                >Forgot password?</a
+              >
             </div>
             <div class="field button-field">
               <button type="button" id="login">Login</button>
@@ -204,6 +213,7 @@
       signInWithEmailAndPassword,
       onAuthStateChanged,
       signOut,
+      sendPasswordResetEmail,
     } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js";
 
     // Your web app's Firebase configuration
@@ -231,6 +241,8 @@
     const githubLogin = document.getElementById("github-login-btn");
     const githubLogin2 = document.getElementById("github-login-btn2");
 
+    const forgotPass = document.getElementById("forgotPass");
+
     document.getElementById("signUp").addEventListener("click", (e) => {
       e.preventDefault();
       var email = document.getElementById("signUpEmail").value;
@@ -247,7 +259,7 @@
             username: username,
           });
 
-          alert("Registered Successfully!");
+          location.reload();
         })
         .catch((error) => {
           const errorMessage = error.message;
@@ -271,6 +283,7 @@
           });
 
           fetchUsername(user.uid);
+          updateUserProfile(user);
         })
         .catch((error) => {
           const errorMessage = error.message;
@@ -302,29 +315,29 @@
         });
     });
 
-    githubLogin.addEventListener('click', function() {
+    githubLogin.addEventListener("click", function () {
       signInWithPopup(auth, githubProvider)
-  .then((result) => {
-    const credential = GithubAuthProvider.credentialFromResult(result);
-    const user = result.user;
-  }).catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-  });
-    })
+        .then((result) => {
+          const credential = GithubAuthProvider.credentialFromResult(result);
+          const user = result.user;
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+        });
+    });
 
-    githubLogin2.addEventListener('click', function() {
+    githubLogin2.addEventListener("click", function () {
       signInWithPopup(auth, githubProvider)
-  .then((result) => {
-    const credential = GithubAuthProvider.credentialFromResult(result);
-    const user = result.user;
-  }).catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-  });
-    })
-
-
+        .then((result) => {
+          const credential = GithubAuthProvider.credentialFromResult(result);
+          const user = result.user;
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+        });
+    });
 
     document.getElementById("signOut").addEventListener("click", () => {
       signOut(auth)
@@ -370,5 +383,38 @@
       document.getElementById("userName").innerText = userName;
     }
 
+    document
+      .getElementById("loginPassword")
+      .addEventListener("keypress", (e) => {
+        if (e.key === "Enter") {
+          document.getElementById("login").click();
+        }
+      });
+
+    document
+      .getElementById("signUpUsername")
+      .addEventListener("keypress", (e) => {
+        if (e.key === "Enter") {
+          document.getElementById("signUp").click();
+        }
+      });
+
+    const resetPass = document.getElementById("resetPass");
+    resetPass.addEventListener("click", function (event) {
+      event.preventDefault();
+
+      const email = document.getElementById("loginEmail").value;
+      sendPasswordResetEmail(auth, email)
+        .then(() => {
+          // Password reset email sent!
+          // ..
+          alert("Password reset email sent!");
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          // ..
+        });
+    });
   </script>
 </html>
