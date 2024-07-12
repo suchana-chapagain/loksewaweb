@@ -17,11 +17,19 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   </head>
   <body>
+    
+<button id="language-toggle">Switch to Nepali</button>
     <div id="nav-placeholder"></div>
     <section class="contact">
       <div class="content">
-        <h2>Contact Us</h2>
-        <p>
+        <h2 data-en="Contact Us" data-ne="हामीलाई सम्पर्क गर्नुहोस्"> Contact Us</h2>
+        <p data-en="We love to hear from you! Whether you have a question, feedback, or need assistance, our team is here to help.
+         Please reach out to us using the form below, and we'll get back to you as soon as possible. 
+         For urgent inquiries, feel free to call us directly or visit our office during business hours.
+          Your satisfaction is our priority, and we are committed to providing you with the best service. Thank you for connecting with us!" 
+          data-ne="हामी तपाईंबाट सुन्न चाहन्छौं! तपाईंको कुनै प्रश्न, प्रतिक्रिया वा सहायता आवश्यक भएमा, हाम्रो टोली यहाँ सहयोग गर्न तयार छ। कृपया तलको फारम प्रयोग गरेर हामीलाई सम्पर्क गर्नुहोस्,
+           र हामी सकेसम्म चाँडो तपाईंलाई जवाफ दिनेछौं। तत्कालका लागि, कृपया हामीलाई प्रत्यक्ष रूपमा कल गर्नुहोस् वा कार्यालय समयको समयमा हाम्रो कार्यालय भ्रमण गर्नुहोस्।
+            तपाईंको सन्तुष्टि हाम्रो प्राथमिकता हो, र हामी तपाईंलाई उत्तम सेवा प्रदान गर्न प्रतिबद्ध छौं। हामीलाई सम्पर्क गर्नुभएकोमा धन्यवाद!">
           We love to hear from you! Whether you have a question, feedback, or
           need assistance, our team is here to help. Please reach out to us
           using the form below, and we'll get back to you as soon as possible.
@@ -38,8 +46,9 @@
               <i class="fa fa-map-marker" aria-hidden="true"></i>
             </div>
             <div class="text">
-              <h3>Address</h3>
-              <p>
+              <h3 data-en="Address" data-ne="ठेगाना">Address</h3>
+              <p data-en="Developer Road Whitefield, Pokhariya Biratnagar, PIN 56613, Nepal" 
+              data-ne="डेभलपर रोड ह्वाइटफील्ड, पोखरिया विराटनगर, पिन ५६६१३, नेपाल">
                 Developer Road Whitefield, Pokhariya Biratnagar, PIN 56613,
                 Nepal
               </p>
@@ -51,8 +60,8 @@
               <i class="fa fa-phone" aria-hidden="true"></i>
             </div>
             <div class="text">
-              <h3>Phone</h3>
-              <p>+977 9862512245</p>
+              <h3 data-en="Phone" data-ne="फोन">Phone</h3>
+              <p data-en="+977 9862512245" data-ne="+९७७ ९८६२५१२२४५">+977 9862512245</p>
             </div>
           </div>
           <div class="box">
@@ -60,7 +69,7 @@
               <i class="fa fa-envelope" aria-hidden="true"></i>
             </div>
             <div class="text">
-              <h3>Email</h3>
+              <h3 data-en="Email" data-ne="इमेल">Email</h3>
               <p>loksewastudyhub14@gmail.com</p>
             </div>
           </div>
@@ -71,21 +80,21 @@
             <h2>Send Message</h2>
             <div class="inputBox">
               <input type="text"  name="Name" id="username" required="required" />
-              <span>Full Name</span>
+              <span data-en="Full Name" data-ne="पुरा नाम">Full Name</span>
             </div>
 
             <div class="inputBox">
               <input type="email"  name="Email" id="email" required="required" />
-              <span>Email</span>
+              <span data-en="Email" data-ne="इमेल" >Email</span>
             </div>
 
             <div class="inputBox">
               <textarea id="text" name="Message" required="required"></textarea>
-              <span>Type your Message.....</span>
+              <span data-en="Type your Message....." data-ne="तपाईंको सन्देश टाइप गर्नुहोस्.....">Type your Message.....</span>
             </div>
 
             <div class="inputBox">
-              <input type="submit" name="" required="send" />
+              <input type="submit" name="" required="send" data-en="send" data-ne="पठाउनुहोस्"/>
             </div>
           </form>
         </div>
@@ -104,6 +113,8 @@
               window.history.replaceState({}, '', '/contact');
           }
       });
+      
   </script>
+  <script src="../languageToggle.js"></script>
   </body>
 </html>
