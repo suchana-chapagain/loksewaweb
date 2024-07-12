@@ -1,4 +1,4 @@
-document.getElementById('language-toggle').addEventListener('click', function() {
+document.getElementById('language-toggle').addEventListener('change', function() {
     const currentLang = this.innerText.includes('Nepali') ? 'en' : 'ne';
     const newLang = currentLang === 'en' ? 'ne' : 'en';
     

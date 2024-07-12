@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Loksewa Study Hub</title>
-    <link rel="icon" type="image/favicon" href="assets/Website Logo White.png">
+    <link
+      rel="icon"
+      type="image/favicon"
+      href="assets/Website Logo White.png"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -12,314 +16,407 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-        <!-- Link Owl Carousel CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <!-- Link Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
-        <link rel="stylesheet" href="styles.css" />
-        <link rel="stylesheet" href="/components/nav.css">
-        <link rel="stylesheet" href="/components/footer.css">
-        <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/components/nav.css" />
+    <link rel="stylesheet" href="/components/footer.css" />
+    <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
 
     <!--JQuery Script-->
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   </head>
   <body>
-    <button id="language-toggle">Switch to Nepali</button>
+    <!-- <button id="language-toggle">Switch to Nepali</button> -->
+    <input type="checkbox" id="language-toggle"/>
     <div class="container">
       <div id="nav-placeholder"></div>
       <header>
         <div class="heroText">
-          <h1 data-en="Dive into learning, the depths are full of treasures!" data-ne="पढाईमा लाग्नुहोस्, गहिराइमा खजाना भरिएको छ!">Dive into learning, the depths are full of treasures!</h1>
+          <h1
+            data-en="Dive into learning, the depths are full of treasures!"
+            data-ne="पढाईमा लाग्नुहोस्, गहिराइमा खजाना भरिएको छ!"
+          >
+            Dive into learning, the depths are full of treasures!
+          </h1>
           <div class="line"></div>
-          <h3 data-en="Welcome to a smarter way to study! Our platform provides curated
+          <h3
+            data-en="Welcome to a smarter way to study! Our platform provides curated
           resources, insightful tips, and motivational guidance to help you
           achieve academic excellence. Empower your learning journey and set
-          yourself up for success with our study tools." data-ne="स्मार्ट अध्ययनको मार्गमा स्वागत छ! हाम्रो प्लेटफर्मले व्यवस्थापित स्रोतहरू, ज्ञानपूर्ण सुझावहरू र प्रेरणादायक मार्गदर्शन प्रदान गर्दछ ताकि तपाईं शैक्षिक उत्कृष्टता प्राप्त गर्न सक्नुहुन्छ। हाम्रो अध्ययन उपकरणहरूसँग तपाईको अध्ययन यात्रालाई सशक्त बनाउनुहोस् र सफलताको लागि आफैंलाई तयार गर्नुहोस्।">
+          yourself up for success with our study tools."
+            data-ne="स्मार्ट अध्ययनको मार्गमा स्वागत छ! हाम्रो प्लेटफर्मले व्यवस्थापित स्रोतहरू, ज्ञानपूर्ण सुझावहरू र प्रेरणादायक मार्गदर्शन प्रदान गर्दछ ताकि तपाईं शैक्षिक उत्कृष्टता प्राप्त गर्न सक्नुहुन्छ। हाम्रो अध्ययन उपकरणहरूसँग तपाईको अध्ययन यात्रालाई सशक्त बनाउनुहोस् र सफलताको लागि आफैंलाई तयार गर्नुहोस्।"
+          >
             Welcome to a smarter way to study! Our platform provides curated
             resources, insightful tips, and motivational guidance to help you
             achieve academic excellence. Empower your learning journey and set
             yourself up for success with our study tools.
           </h3>
-          <a href="#" class="btn" data-en="Learn More" data-ne="थप जान्नुहोस्">Learn More</a>
+          <a href="/" class="btn" data-en="Learn More" data-ne="थप जान्नुहोस्"
+            >Learn More</a
+          >
         </div>
       </header>
       <div class="featureSection">
-        <h1 class="heading" data-en="Our Features" data-np="हाम्रो विशेषताहरू">Our Features</h1>
+        <h1 class="heading" data-en="Our Features" data-ne="हाम्रो विशेषताहरू">
+          Our Features
+        </h1>
         <div class="line"></div>
         <div class="featureBox">
           <div class="box-container">
             <div class="box-containeri">
               <img src="assets/ques.jpg" alt="" />
-              <h3>Question Sets</h3>
-              <p>
+              <h3 data-en="Question Sets" data-ne="प्रश्न सेटहरू">
+                Question Sets
+              </h3>
+              <p
+                data-en="Our question sets include a variety of formats such as multiple-choice, short question, long question etc."
+                data-ne="हाम्रो प्रश्न सेटहरूमा बहु-विकल्प, छोटो प्रश्न, लामो प्रश्न आदि जस्ता विभिन्न ढाँचा समावेश छन्।"
+              >
                 Our question sets include a variety of formats such as
                 multiple-choice,short question,long question e.t.c
               </p>
-              <a href="#" class="btn">Read More</a>
+              <a href="/" class="btn" data-en="Read More" data-ne="थप पढ्नुहोस्"
+                >Read More</a
+              >
             </div>
 
             <div class="box-containeri">
               <img src="assets/studym.jpg" alt="" />
-              <h3>Study Material</h3>
-              <p>
+              <h3 data-en="Study Material" data-ne="अध्ययन सामग्री">
+                Study Material
+              </h3>
+              <p
+                data-en="Unlock the full potential of your learning journey with our study materials. Designed to cater to diverse learning needs and styles, our study resources are your perfect companion for professional excellence."
+                data-ne="हाम्रो अध्ययन सामग्रीको साथ तपाईको अध्ययन यात्राको पूर्ण सम्भावनालाई अनलक गर्नुहोस्। विभिन्न अध्ययन आवश्यकताहरू र शैलिहरूलाई पूरा गर्न डिजाइन गरिएको, हाम्रो अध्ययन स्रोतहरू तपाईंको व्यावसायिक उत्कृष्टताको लागि उत्तम साथी हुन्।"
+              >
                 Unlock the full potential of your learning journey with our
                 study materials. Designed to cater to diverse learning needs and
                 styles, our study resources are your perfect companion for
                 professional excellence.
               </p>
-              <a href="#" class="btn">Read More</a>
+              <a href="#" class="btn" data-en="Read More" data-ne="थप पढ्नुहोस्"
+                >Read More</a
+              >
             </div>
-
             <div class="box-containeri">
               <img src="assets/newsnot.jpg" alt="" />
-              <h3>Recent News and Notices</h3>
-              <p>
+              <h3
+                data-en="Recent News and Notices"
+                data-ne="भर्खरको समाचार र सूचनाहरू"
+              >
+                Recent News and Notices
+              </h3>
+              <p
+                data-en="Stay informed with the latest updates, announcements, and important information. Here, you'll find all the recent news and notices."
+                data-ne="ताजा अपडेट, घोषणा र महत्त्वपूर्ण जानकारीहरू संग सूचित रहनुहोस्। यहाँ, तपाईले सबै भर्खरका समाचार र सूचनाहरू पाउनुहुनेछ।"
+              >
                 Stay informed with the latest updates, announcements, and
                 important information. Here, you'll find all the recent news and
                 notices.
               </p>
-              <a href="#" class="btn">Read More</a>
+              <a href="#" class="btn" data-en="Read More" data-ne="थप पढ्नुहोस्"
+                >Read More</a
+              >
             </div>
-
             <div class="box-containeri">
               <img src="assets/practice.jpg" alt="" />
-              <h3>Practice Model</h3>
-              <p>
+              <h3 data-en="Practice Model" data-ne="अभ्यास मोडेल">
+                Practice Model
+              </h3>
+              <p
+                data-en="Engage with our interactive quizzes that cover various topics and difficulty levels. Each quiz is designed to challenge your understanding and provide instant feedback, helping you identify areas for improvement."
+                data-ne="विभिन्न विषयहरू र कठिनाइ स्तरहरू समेट्ने हाम्रो इन्टरएक्टिभ प्रश्नोत्तरसँग संलग्न हुनुहोस्। प्रत्येक प्रश्नोत्तरले तपाईको बुझाइलाई चुनौती दिन र सुधारको लागि क्षेत्रहरू पहिचान गर्न मद्दत गर्न तत्काल प्रतिक्रिया प्रदान गर्न डिजाइन गरिएको हो।"
+              >
                 Engage with our interactive quizzes that cover various topics
                 and difficulty levels. Each quiz is designed to challenge your
                 understanding and provide instant feedback, helping you identify
                 areas for improvement.
               </p>
-              <a href="#" class="btn">Read More</a>
+              <a href="#" class="btn" data-en="Read More" data-ne="थप पढ्नुहोस्"
+                >Read More</a
+              >
             </div>
-
             <div class="box-containeri">
               <img src="assets/multidev.png" alt="" />
-              <h3>Multi-Device Support</h3>
-              <p>
+              <h3 data-en="Multi-Device Support" data-ne="मल्टि-डिभाइस समर्थन">
+                Multi-Device Support
+              </h3>
+              <p
+                data-en="Experience the freedom and flexibility of our multi-device support. Sign up today and start accessing your study materials and practice tools from your laptop, tablet, or smartphone. Learning has never been more convenient!"
+                data-ne="हाम्रो मल्टि-डिभाइस समर्थनको स्वतन्त्रता र लचिलोपनको अनुभव गर्नुहोस्। आजै साइन अप गर्नुहोस् र तपाईंको ल्यापटप, ट्याब्लेट, वा स्मार्टफोनबाट तपाईंको अध्ययन सामग्रीहरू र अभ्यास उपकरणहरू पहुँच गर्न सुरू गर्नुहोस्। सिकाइ कहिल्यै यति सुविधाजनक भएको छैन!"
+              >
                 Experience the freedom and flexibility of our multi-device
                 support. Sign up today and start accessing your study materials
                 and practice tools from your laptop, tablet, or smartphone.
                 Learning has never been more convenient!
               </p>
-              <a href="#" class="btn">Read More</a>
+              <a href="#" class="btn" data-en="Read More" data-ne="थप पढ्नुहोस्"
+                >Read More</a
+              >
             </div>
-
             <div class="box-containeri">
               <img src="assets/form.png" alt="" />
-              <h3>Form Guidance</h3>
-              <p>
+              <h3 data-en="Form Guidance" data-ne="फारम मार्गदर्शन">
+                Form Guidance
+              </h3>
+              <p
+                data-en="Filling out forms can sometimes be confusing. Our step-by-step form guidance ensures that you complete all required fields accurately and efficiently."
+                data-ne="प्रपत्रहरू भर्न कहिलेकाहीं भ्रमित हुन सक्छ। हाम्रो चरण-दर-चरण फारम मार्गदर्शनले तपाईंले सबै आवश्यक क्षेत्रहरू सही र कुशलतापूर्वक पूरा गर्न सुनिश्चित गर्दछ।"
+              >
                 Filling out forms can sometimes be confusing. Our step-by-step
                 form guidance ensures that you complete all required fields
                 accurately and efficiently.
               </p>
-              <a href="#" class="btn">Read More</a>
+              <a href="#" class="btn" data-en="Read More" data-ne="थप पढ्नुहोस्"
+                >Read More</a
+              >
             </div>
           </div>
         </div>
       </div>
       <div class="testiContainer">
         <div class="testimonials-section">
-	
-            <!-- Section Header Starts -->
-            <div class="section-header">
-                <h1>What Students Say</h1>
+          <!-- Section Header Starts -->
+          <div class="section-header">
+            <h1 data-en="What Students Say" data-ne="के भन्छन विद्यार्थीहरु">What Students Say</h1>
+          </div>
+          <!-- Section Header Ends -->
+
+          <!-- Owl Carousel Slider Starts -->
+          <div class="owl-carousel owl-theme testimonials-container">
+            <!-- Item1 Starts -->
+            <div class="item testimonial-card">
+              <div class="test-card-body">
+                <div class="quote">
+                  <i class="fa fa-quote-left"></i>
+                  <h2>Awesome Coding</h2>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse.
+                </p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="profile">
+                <div class="profile-image">
+                  <img src="assets/person1.jpg" />
+                </div>
+                <div class="profile-desc">
+                  <span>Person Name</span>
+                  <span>Description</span>
+                </div>
+              </div>
             </div>
-            <!-- Section Header Ends -->
-        
-            <!-- Owl Carousel Slider Starts -->
-            <div class="owl-carousel owl-theme testimonials-container">
-                <!-- Item1 Starts -->
-                <div class="item testimonial-card">
-                    <div class="test-card-body">
-                        <div class="quote">
-                            <i class="fa fa-quote-left"></i>
-                            <h2>Awesome Coding</h2>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
-                        <div class="ratings">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="profile">
-                        <div class="profile-image">
-                            <img src="assets/person1.jpg">
-                        </div>
-                        <div class="profile-desc">
-                            <span>Person Name</span>
-                            <span>Description</span>
-                        </div>
-                    </div>
+            <!-- Item1 Ends -->
+
+            <!-- Item2 Starts -->
+            <div class="item testimonial-card">
+              <div class="test-card-body">
+                <div class="quote">
+                  <i class="fa fa-quote-left"></i>
+                  <h2>Awesome Coding</h2>
                 </div>
-                <!-- Item1 Ends -->
-        
-                <!-- Item2 Starts -->
-                <div class="item testimonial-card">
-                    <div class="test-card-body">
-                        <div class="quote">
-                            <i class="fa fa-quote-left"></i>
-                            <h2>Awesome Coding</h2>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
-                        <div class="ratings">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="profile">
-                        <div class="profile-image">
-                            <img src="assets/person2.jpg">
-                        </div>
-                        <div class="profile-desc">
-                            <span>Person Name</span>
-                            <span>Description</span>
-                        </div>
-                    </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse.
+                </p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
                 </div>
-                <!-- Item2 Ends -->
-        
-                <!-- Item3 Starts -->
-                <div class="item testimonial-card">
-                    <div class="test-card-body">
-                        <div class="quote">
-                            <i class="fa fa-quote-left"></i>
-                            <h2>Awesome Coding</h2>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
-                        <div class="ratings">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="profile">
-                        <div class="profile-image">
-                            <img src="assets/person3.jpg">
-                        </div>
-                        <div class="profile-desc">
-                            <span>Person Name</span>
-                            <span>Description</span>
-                        </div>
-                    </div>
+              </div>
+              <div class="profile">
+                <div class="profile-image">
+                  <img src="assets/person2.jpg" />
                 </div>
-                <!-- Item3 Ends -->
-        
-                <!-- Item4 Starts -->
-                <div class="item testimonial-card">
-                    <div class="test-card-body">
-                        <div class="quote">
-                            <i class="fa fa-quote-left"></i>
-                            <h2>Awesome Coding</h2>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
-                        <div class="ratings">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="profile">
-                        <div class="profile-image">
-                            <img src="assets/person4.jpg">
-                        </div>
-                        <div class="profile-desc">
-                            <span>Person Name</span>
-                            <span>Description</span>
-                        </div>
-                    </div>
+                <div class="profile-desc">
+                  <span>Person Name</span>
+                  <span>Description</span>
                 </div>
-                <!-- Item4 Ends -->
-        
-                <!-- Item5 Starts -->
-                <div class="item testimonial-card">
-                    <div class="test-card-body">
-                        <div class="quote">
-                            <i class="fa fa-quote-left"></i>
-                            <h2>Awesome Coding</h2>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
-                        <div class="ratings">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="profile">
-                        <div class="profile-image">
-                            <img src="assets/person5.jpg">
-                        </div>
-                        <div class="profile-desc">
-                            <span>Person Name</span>
-                            <span>Description</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Item5 Ends -->
-        
-                <!-- Item6 Starts -->
-                <div class="item testimonial-card">
-                    <div class="test-card-body">
-                        <div class="quote">
-                            <i class="fa fa-quote-left"></i>
-                            <h2>Awesome Coding</h2>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
-                        <div class="ratings">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="profile">
-                        <div class="profile-image">
-                            <img src="assets/person6.jpg">
-                        </div>
-                        <div class="profile-desc">
-                            <span>Person Name</span>
-                            <span>Description</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Item6 Ends -->
-        
+              </div>
             </div>
-            <!-- Owl Carousel Slider Ends -->
-        
+            <!-- Item2 Ends -->
+
+            <!-- Item3 Starts -->
+            <div class="item testimonial-card">
+              <div class="test-card-body">
+                <div class="quote">
+                  <i class="fa fa-quote-left"></i>
+                  <h2>Awesome Coding</h2>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse.
+                </p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="profile">
+                <div class="profile-image">
+                  <img src="assets/person3.jpg" />
+                </div>
+                <div class="profile-desc">
+                  <span>Person Name</span>
+                  <span>Description</span>
+                </div>
+              </div>
+            </div>
+            <!-- Item3 Ends -->
+
+            <!-- Item4 Starts -->
+            <div class="item testimonial-card">
+              <div class="test-card-body">
+                <div class="quote">
+                  <i class="fa fa-quote-left"></i>
+                  <h2>Awesome Coding</h2>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse.
+                </p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="profile">
+                <div class="profile-image">
+                  <img src="assets/person4.jpg" />
+                </div>
+                <div class="profile-desc">
+                  <span>Person Name</span>
+                  <span>Description</span>
+                </div>
+              </div>
+            </div>
+            <!-- Item4 Ends -->
+
+            <!-- Item5 Starts -->
+            <div class="item testimonial-card">
+              <div class="test-card-body">
+                <div class="quote">
+                  <i class="fa fa-quote-left"></i>
+                  <h2>Awesome Coding</h2>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse.
+                </p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="profile">
+                <div class="profile-image">
+                  <img src="assets/person5.jpg" />
+                </div>
+                <div class="profile-desc">
+                  <span>Person Name</span>
+                  <span>Description</span>
+                </div>
+              </div>
+            </div>
+            <!-- Item5 Ends -->
+
+            <!-- Item6 Starts -->
+            <div class="item testimonial-card">
+              <div class="test-card-body">
+                <div class="quote">
+                  <i class="fa fa-quote-left"></i>
+                  <h2>Awesome Coding</h2>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse.
+                </p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="profile">
+                <div class="profile-image">
+                  <img src="assets/person6.jpg" />
+                </div>
+                <div class="profile-desc">
+                  <span>Person Name</span>
+                  <span>Description</span>
+                </div>
+              </div>
+            </div>
+            <!-- Item6 Ends -->
+          </div>
+          <!-- Owl Carousel Slider Ends -->
         </div>
       </div>
       <div id="footer-placeholder"></div>
     </div>
-<!--   *****   JQuery Link   *****   -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!--   *****   JQuery Link   *****   -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
-<!--   *****   Owl Carousel js Link  *****  -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!--   *****   Owl Carousel js Link  *****  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-<!-- Local Scripts -->
-<!-- <script src="script.js"></script> -->
-<!-- <script src="activeScript.js"></script> -->
-<script type="text/javascript" src="carouselScript.js"></script>
+    <!-- Local Scripts -->
+    <!-- <script src="script.js"></script> -->
+    <!-- <script src="activeScript.js"></script> -->
+    <script type="text/javascript" src="carouselScript.js"></script>
 
-<!--Component Script-->
-<script src="component.js"></script>
+    <!--Component Script-->
+    <script src="component.js"></script>
 
-<!--Language Toggle Script-->
-<script src="languageToggle.js"></script>
+    <!--Language Toggle Script-->
+    <script src="languageToggle.js"></script>
   </body>
 </html>
