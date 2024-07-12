@@ -25,11 +25,12 @@
     />
   </head>
   <body>
+    <button id="language-toggle">Switch to Nepali</button>
     <div id="nav-placeholder"></div>
     <section class="container forms" id="loginForm">
       <div class="form login">
         <div class="form-content">
-          <header>Login</header>
+          <header data-en="Login" data-ne="लगइन">Login</header>
           <form action="#">
             <div class="field input-field">
               <input
@@ -37,6 +38,8 @@
                 id="loginEmail"
                 placeholder="Email"
                 class="input"
+                data-en="Email"
+                data-ne="इमेल"
               />
             </div>
             <div class="field input-field">
@@ -45,6 +48,8 @@
                 id="loginPassword"
                 placeholder="Password"
                 class="password"
+                data-en="Password"
+                data-ne="पासवर्ड"
               />
               <i class="bx bx-hide eye-icon"></i>
             </div>
@@ -52,18 +57,20 @@
               <a
                 class="forgot-pass"
                 id="resetPass"
-                style="cursor: pointer"
+                style="cursor: pointer"data-en="Forgot password?" 
+                data-ne="पासवर्ड बिर्सनुभयो?"
                 >Forgot password?</a
               >
             </div>
             <div class="field button-field">
-              <button type="button" id="login">Login</button>
+              <button type="button" id="login"data-en="Login" 
+              data-ne="लगइन">Login</button>
             </div>
           </form>
           <div class="form-link">
-            <span
+            <span data-en="Don't have an account?" data-ne="खाता छैन?"
               >Don't have an account?
-              <a href="#" class="link signup-link">Sign Up</a></span
+              <a href="#" class="link signup-link"data-en="Sign Up" data-ne="साइन अप गर्नुहोस्">Sign Up</a></span
             >
           </div>
         </div>
@@ -71,20 +78,20 @@
         <div class="media-options">
           <a href="#" class="field github" id="github-login-btn">
             <i class="bx bxl-github github-icon"></i>
-            <span>Login with GitHub</span>
+            <span data-en="Login with GitHub" data-ne="गिटहब संग लगइन">Login with GitHub</span>
           </a>
         </div>
         <div class="media-options">
           <a href="#" class="field google" id="google-login-btn">
             <img src="/assets/google.png" class="google-img" />
-            <span>Login with Google</span>
+            <span data-en="Login with Google" data-ne="गुगल संग लगइन">Login with Google</span>
           </a>
         </div>
       </div>
 
       <div class="form signup">
         <div class="form-content">
-          <header>Sign Up</header>
+          <header data-en="Sign Up" data-ne="साइन अप गर्नुहोस्">Sign Up</header>
           <form action="#">
             <div class="field input-field">
               <input
@@ -92,6 +99,8 @@
                 id="signUpEmail"
                 placeholder="Email"
                 class="input"
+                data-en="Email"
+                data-ne="इमेल"
               />
             </div>
             <div class="field input-field">
@@ -100,6 +109,8 @@
                 id="signUpPassword"
                 placeholder="Create password"
                 class="password"
+                data-en="Create password"
+                 data-ne="पासवर्ड बनाउनुहोस्"
               />
               <i class="bx bx-hide eye-icon"></i>
             </div>
@@ -109,16 +120,19 @@
                 id="signUpUsername"
                 placeholder="Create Username"
                 class="username"
+                data-en="Create Username"
+                data-ne="प्रयोगकर्ता नाम बनाउनुहोस्"
+
               />
             </div>
             <div class="field button-field">
-              <button type="button" id="signUp">Sign Up</button>
+              <button type="button" id="signUp" data-en="Sign Up" data-ne="साइन अप गर्नुहोस्">Sign Up</button>
             </div>
           </form>
           <div class="form-link">
-            <span
+            <span data-en="Already have an account?" data-ne="पहिले नै खाता छ?"></span>
               >Already have an account?
-              <a href="#" class="link login-link">Login</a></span
+              <a href="#" class="link login-link"data-en="Login" data-ne="लगइन" >Login</a></span
             >
           </div>
         </div>
@@ -126,32 +140,32 @@
         <div class="media-options">
           <a href="#" class="field github" id="github-login-btn2">
             <i class="bx bxl-github github-icon"></i>
-            <span>Login with GitHub</span>
+            <span data-en="Login with GitHub" data-ne="गिटहब संग लगइन">Login with GitHub</span>
           </a>
         </div>
         <div class="media-options">
           <a href="#" class="field google" id="google-login-btn2">
             <img src="/assets/google.png" alt="" class="google-img" />
-            <span>Login with Google</span>
+            <span data-en="Login with Google" data-ne="गुगल संग लगइन">Login with Google</span>
           </a>
         </div>
       </div>
     </section>
     <section id="welcomeUser" style="display: none">
-      <h1 id="welcomeText">Hello, <span id="userName">!</span></h1>
-      <h2>Welcome to advanced learning Experience! Let's start the journey!</h2>
+      <h1 id="welcomeText" data-en="Hello," data-ne="नमस्ते,">Hello, <span id="userName">!</span></h1>
+      <h2 data-en="Welcome to advanced learning Experience! Let's start the journey!"  data-ne="उन्नत शिक्षण अनुभवमा स्वागत छ! यात्रा सुरु गरौं!">Welcome to advanced learning Experience! Let's start the journey!</h2>
       <div id="container">
         <div class="col-lg-3 col-xs-6">
           <!-- small box -->
           <div class="small-box bg-aqua">
             <div class="inner">
-              <h3>Study</h3>
-              <p>Read and Prepare!</p>
+              <h3 data-en="Study" data-ne="अध्ययन गर्नुहोस्">Study</h3>
+              <p data-en="Read and Prepare!" data-ne="पढ्नुहोस् र तयारी गर्नुहोस्!">Read and Prepare!</p>
             </div>
             <div class="icon">
               <i class="fa fa-book"></i>
             </div>
-            <a href="study.html" class="small-box-footer">
+            <a href="study.html" class="small-box-footer" data-en="More info" data-ne="अधिक जानकारी">
               More info <i class="fa fa-arrow-circle-right"></i>
             </a>
           </div>
@@ -160,8 +174,8 @@
           <!-- small box -->
           <div class="small-box bg-green">
             <div class="inner">
-              <h3>Practice</h3>
-              <p>Make it Perfect!</p>
+              <h3 data-en="Practice" data-ne="अभ्यास गर्नुहोस्">Practice</h3>
+              <p data-en="Make it Perfect!" data-ne="यसलाई पूर्ण बनाउनुस!">Make it Perfect!</p>
             </div>
             <div class="icon">
               <i class="fa fa-note-sticky"></i>
@@ -175,19 +189,19 @@
           <!-- small box -->
           <div class="small-box bg-yellow">
             <div class="inner">
-              <h3>News</h3>
-              <p>Stay Updated!</p>
+              <h3 data-en="News" data-ne="समाचार">News</h3>
+              <p data-en="Stay Updated!" data-ne="अद्यावधिक रहनुहोस्!">Stay Updated!</p>
             </div>
             <div class="icon">
               <i class="fa fa-newspaper"></i>
             </div>
-            <a href="news.html" class="small-box-footer">
+            <a href="news.html" class="small-box-footer"data-en="More info" data-ne="अधिक जानकारी">
               More info <i class="fa fa-arrow-circle-right"></i>
             </a>
           </div>
         </div>
       </div>
-      <button id="signOut"><span class="text">Sign Out</span></button>
+      <button id="signOut"data-en="Sign Out" data-ne="साइन आउट गर्नुहोस्"><span class="text">Sign Out</span></button>
     </section>
     <div id="footer-placeholder"></div>
     <script src="accountScript.js"></script>
@@ -426,4 +440,5 @@
         }
     });
     </script>
+    <script src="../languageToggle.js"></script>
 </html>
