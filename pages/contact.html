@@ -96,5 +96,14 @@
 
     <!--Component Script-->
     <script src="../component.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          // Check if the URL contains '/pages'
+          if (window.location.pathname.includes('/pages/contact.html')) {
+              // Change the URL to remove '/pages'
+              window.history.replaceState({}, '', '/contact');
+          }
+      });
+  </script>
   </body>
 </html>
