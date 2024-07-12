@@ -1,11 +1,8 @@
-document.getElementById('language-toggle').addEventListener('change', function() {
-    const currentLang = this.innerText.includes('Nepali') ? 'en' : 'ne';
-    const newLang = currentLang === 'en' ? 'ne' : 'en';
-    
-    document.querySelectorAll('[data-en]').forEach(el => {
-      el.innerText = el.getAttribute(`data-${newLang}`);
-    });
-  
-    this.innerText = currentLang === 'en' ? 'Switch to English' : 'Switch to Nepali';
+document.getElementById('language-toggle').addEventListener('change', function () {
+  var elements = document.querySelectorAll('[data-en]'); // Select all elements with data-en attribute
+  var newLang = this.checked ? 'ne' : 'en';
+
+  elements.forEach(function (element) {
+      element.textContent = element.getAttribute('data-' + newLang);
   });
-  
+});
