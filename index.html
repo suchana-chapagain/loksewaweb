@@ -25,23 +25,27 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   </head>
   <body>
+    <button id="language-toggle">Switch to Nepali</button>
     <div class="container">
       <div id="nav-placeholder"></div>
       <header>
         <div class="heroText">
-          <h1>Dive into learning, the depths are full of treasures!</h1>
+          <h1 data-en="Dive into learning, the depths are full of treasures!" data-ne="पढाईमा लाग्नुहोस्, गहिराइमा खजाना भरिएको छ!">Dive into learning, the depths are full of treasures!</h1>
           <div class="line"></div>
-          <h3>
+          <h3 data-en="Welcome to a smarter way to study! Our platform provides curated
+          resources, insightful tips, and motivational guidance to help you
+          achieve academic excellence. Empower your learning journey and set
+          yourself up for success with our study tools." data-ne="स्मार्ट अध्ययनको मार्गमा स्वागत छ! हाम्रो प्लेटफर्मले व्यवस्थापित स्रोतहरू, ज्ञानपूर्ण सुझावहरू र प्रेरणादायक मार्गदर्शन प्रदान गर्दछ ताकि तपाईं शैक्षिक उत्कृष्टता प्राप्त गर्न सक्नुहुन्छ। हाम्रो अध्ययन उपकरणहरूसँग तपाईको अध्ययन यात्रालाई सशक्त बनाउनुहोस् र सफलताको लागि आफैंलाई तयार गर्नुहोस्।">
             Welcome to a smarter way to study! Our platform provides curated
             resources, insightful tips, and motivational guidance to help you
             achieve academic excellence. Empower your learning journey and set
             yourself up for success with our study tools.
           </h3>
-          <a href="#" class="btn">Learn More</a>
+          <a href="#" class="btn" data-en="Learn More" data-ne="थप जान्नुहोस्">Learn More</a>
         </div>
       </header>
       <div class="featureSection">
-        <h1 class="heading">Our Features</h1>
+        <h1 class="heading" data-en="Our Features" data-np="हाम्रो विशेषताहरू">Our Features</h1>
         <div class="line"></div>
         <div class="featureBox">
           <div class="box-container">
@@ -314,5 +318,8 @@
 
 <!--Component Script-->
 <script src="component.js"></script>
+
+<!--Language Toggle Script-->
+<script src="languageToggle.js"></script>
   </body>
 </html>
