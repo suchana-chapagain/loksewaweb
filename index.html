@@ -37,12 +37,6 @@
   <body>
     <div class="container">
       <div id="nav-placeholder"></div>
-      <div class="langSwitch">
-        <h2>Choose your language:</h2>
-        <div class="languageSwitch">
-        <input type="checkbox" id="language-toggle"/>
-      </div>
-      </div>
       <header>
         <div class="heroText">
           <h1
@@ -421,6 +415,20 @@
     <script src="component.js"></script>
 
     <!--Language Toggle Script-->
-    <script src="languageToggle.js"></script>
+    <script src="languageToggle.js" defer></script>
+
+    <script>
+      document.getElementById('language-checkbox').addEventListener('change', function() {
+          if (this.checked) {
+              // Code to switch to Nepali
+              document.body.classList.add('nepali');
+              document.body.classList.remove('english');
+          } else {
+              // Code to switch to English
+              document.body.classList.add('english');
+              document.body.classList.remove('nepali');
+          }
+      });
+  </script>
   </body>
 </html>

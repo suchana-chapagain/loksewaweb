@@ -31,13 +31,14 @@
     <ul class="nav-links">
         <li><a href="../" data-en="Home" data-ne="गृहपृष्ठ">Home</a></li>
         <li><a href="../pages/study.html" data-en="Study" data-ne="अध्ययन">Study</a></li>
+        <li><a href="../pages/practice.html" data-en="Practice" data-ne="तयारी">Practice</a></li>
         <li><a href="../pages/news.html" data-en="News & Notice" data-ne="समाचार र सूचना"> News & Notice</a></li>
         <li><a href="../pages/about.html" data-en="About Us" data-ne="हाम्रोबारे"> About Us</a></li>
         <li><a href="../pages/contact.html" data-en="Contact" data-ne="सम्पर्क">Contact</a></li>
         <li id="acc"><a href="../pages/account.html" data-en="Account" data-ne="खाता">Account<i class="fa fa-user"></i></a></li>  
     </ul>
     <div class="search_box">
-      <input type="search" placeholder="Search Here" data-en="Search Here" data-ne="यहाँ खोज्नुहोस्" />
+      <input type="search" placeholder="Search Here" id="placeHolder" data-en-placeholder="Search Here" data-ne-placeholder="यहाँ खोज्नुहोस्" />
       <span class="fa fa-search"></span>
     </div>
     <div class="burger">
@@ -48,40 +49,17 @@
     <script src="../script.js"></script>
     <script src="../activeScript.js"></script>
     <script src="../languageToggle.js"></script>
-    <script type="module">
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
-      import {
-      onAuthStateChanged,
-    } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js";
-
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-
-    // Your web app's Firebase configuration
-    const firebaseConfig = {
-      apiKey: "AIzaSyCFvgep4c6TFS8sRg92GBxM45r6lYeA63w",
-      authDomain: "loksewa-authentication.firebaseapp.com",
-      projectId: "loksewa-authentication",
-      storageBucket: "loksewa-authentication.appspot.com",
-      messagingSenderId: "325243528377",
-      appId: "1:325243528377:web:28214e9db9d4fa4680a768",
-    };
-
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const auth = getAuth();
-
-    onAuthStateChanged(auth, (user) => {
-      if (user) {
-        // User is signed in, see docs for a list of available properties
-        // https://firebase.google.com/docs/reference/js/auth.user
-        const uid = user.uid;
-        document.getElementById("acc").textContent = uid;
-        // ...
-      } else {
-        // User is signed out
-        // ...
-      }
-    });
-    </script>
   </nav>
+  <div class="langSwitch">
+    <h3>Choose your language:</h3>
+    <div class="language-switch">
+      <input type="checkbox" id="language-toggle" class="language-checkbox">
+      <label for="language-toggle" class="language-label">
+          <div class="toggleLang">
+              <span class="flag english-flag"></span>
+              <span class="flag nepali-flag"></span>
+          </div>
+      </label>
+  </div>
+  <h3 data-en="English" data-ne="नेपाली">English</h3>
+  </div>

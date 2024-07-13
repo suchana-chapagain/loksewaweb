@@ -320,12 +320,13 @@
       display: flex;
       flex-direction: column;
       position: absolute;
-      top: 200px;
+      top: 240px;
       left: -105%;
-      width: 97.8%;
+      width: 100%;
       background-color: #333;
       transition: all 0.5s ease;
       padding-left: 0;
+      box-sizing: border-box;
     }
     .nav-links li {
       margin: 15px 0;
@@ -372,12 +373,13 @@
       display: flex;
       flex-direction: column;
       position: absolute;
-      top: 250px;
+      top: 290px;
       left: -105%;
-      width: 99.1%;
+      width:100%;
       background-color: #333;
       transition: all 0.5s ease;
       padding-left: 0;
+      box-sizing: border-box;
     }
     .nav-links li {
       margin: 15px 0;
@@ -409,4 +411,103 @@
   
   a {
     text-decoration: none;
+  }
+
+  .langSwitch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    color: white;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+  
+  .language-switch {
+    margin-left: 24px;
+    position: relative;
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .language-checkbox {
+    display: none;
+  }
+  
+  .language-label {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+  
+  .toggleLang {
+    position: absolute;
+    top: 3.5px;
+    left: 5px;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .flag {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    border-radius: 50%;
+    transition: opacity 0.3s;
+  }
+  
+  .english-flag {
+  height: 24px;
+  width: 24px;
+  margin-right: -24px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg');
+    background-position: center;
+  }
+  
+  .nepali-flag {
+  height: 24px;
+  width: 24px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/9b/Flag_of_Nepal.svg');
+    background-position: center;
+    opacity: 0;
+  }
+  
+  .language-checkbox:checked + .language-label .toggleLang {
+    transform: translateX(24px);
+  }
+  
+  .language-checkbox:checked + .language-label .toggleLang .english-flag {
+    opacity: 0;
+  }
+  
+  .language-checkbox:checked + .language-label .toggleLang .nepali-flag {
+    opacity: 1;
+  }
+  
+  .langSwitch > h3{
+    margin-left: 16px;
+  }
+
+  @media only screen and (max-width: 480px){
+    .langSwitch > h3{
+      font-size: medium;
+    }
+
+    .langSwitch > .language-switch{
+      margin-left: 8px;
+    }
   }
