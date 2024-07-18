@@ -234,8 +234,8 @@
     top: 100%; 
     left: 50%;
     transform: translateX(-50%);
-    width: 120px; 
-    height: 150px; 
+    width: 200px; 
+    height: 250px; 
     background: blueviolet;
     padding: 10px; 
     box-sizing: border-box; 
@@ -253,7 +253,33 @@
     display: flex;
   }
   
+  .nav-links > li > ul > li > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100%; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px; 
+    height: 250px; 
+    background: blueviolet;
+    padding: 10px; 
+    box-sizing: border-box; 
+    border-radius: 8px;
+    z-index: 1;
+    display: none;
+  }
   
+  .nav-links > li > ul > li > ul > li {
+    position: relative;
+    padding: 10px;
+  }
+
+  .nav-links > li > ul > li:hover ul{
+    display: flex;
+  }
   .burger {
     display: none;
     cursor: pointer;
