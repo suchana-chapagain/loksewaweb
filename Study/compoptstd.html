@@ -4,13 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <link rel="stylesheet" href="compoptprac.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-  />
+  <link rel="stylesheet" href="compoptstd.css" />
+  <link rel="icon" type="image/favicon" href="../assets/Website Logo White.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="../components/nav.css" />
+    <link rel="stylesheet" href="../components/footer.css" />
+
+    <!--JQuery Script-->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
+  <div id="nav-placeholder"></div>
+  <h1 id="selectMode">Select any one to continue:</h1>
   <div id="container">
     <div class="col-lg-3 col-xs-6">
       <!-- small box -->
@@ -32,7 +41,7 @@
     <div class="col-lg-3 col-xs-6">
       <!-- small box -->
       <div class="small-box bg-green">
-        <div class="inner">
+        <div class="inner" id="gkDiv">
           <h2 data-en="Practice" data-ne="अभ्यास गर्नुहोस्">
             General Knowledge
           </h2>
@@ -70,19 +79,43 @@
     <div class="slide">
       <h2>Model Sets</h2>
       <ul>
-        <li><a id="listSelect1"><i class="fa-solid fa-list"></i>Model Set 1</a></li>
-        <li><a id="listSelect2"><i class="fa-solid fa-list"></i>Model Set 2</a></li>
-        <li><a id="listSelect3"><i class="fa-solid fa-list"></i>Model Set 3</a></li>
+        <li><a id="modelSelect1"><i class="fa-solid fa-list"></i>Model Set 1</a></li>
+        <li><a id="modelSelect2"><i class="fa-solid fa-list"></i>Model Set 2</a></li>
+        <li><a id="modelSelect3"><i class="fa-solid fa-list"></i>Model Set 3</a></li>
       </ul>
     </div>
-    <div class="content" id="set1">
+    <div class="content set1">
       <embed src="https://firebasestorage.googleapis.com/v0/b/loksewa-authentication.appspot.com/o/ModelSets%2FComputerOperator%2FAnuj%20Acharya_CV.pdf?alt=media&token=57c1c5e1-7c62-4e58-8bc7-2d6c72e372cd" type="application/pdf">
     </div>
-    <div class="content" id="set2">
+    <div class="content set2">
       <embed src="https://firebasestorage.googleapis.com/v0/b/loksewa-authentication.appspot.com/o/ModelSets%2FComputerOperator%2FSuchana_CV.pdf?alt=media&token=fb2e3a8a-6eff-48bd-9984-7466edff73ab" type="application/pdf">
     </div>
   </div>
+  <div class="gkContainer" id="gkContent">
+    <input type="checkbox" id="toggle" checked/>
+    <label for="toggle" class="sideToggle">
+      <span class="topLine common"></span>
+      <span class="middleLine common"></span>
+      <span class="bottomLine common"></span>
+    </label>
+    <div class="slide">
+      <h2>GK Topics</h2>
+      <ul>
+        <li><a id="gkSelect1"><i class="fa-solid fa-list"></i>Topic 1</a></li>
+        <li><a id="gkSelect2"><i class="fa-solid fa-list"></i>Topic 2</a></li>
+        <li><a id="gkSelect3"><i class="fa-solid fa-list"></i>Topic 3</a></li>
+      </ul>
+    </div>
+    <div class="content topic1">
+      <embed src="https://firebasestorage.googleapis.com/v0/b/loksewa-authentication.appspot.com/o/ModelSets%2FComputerOperator%2FAnuj%20Acharya_CV.pdf?alt=media&token=57c1c5e1-7c62-4e58-8bc7-2d6c72e372cd" type="application/pdf">
+    </div>
+    <div class="content topic2">
+      <embed src="https://firebasestorage.googleapis.com/v0/b/loksewa-authentication.appspot.com/o/ModelSets%2FComputerOperator%2FSuchana_CV.pdf?alt=media&token=fb2e3a8a-6eff-48bd-9984-7466edff73ab" type="application/pdf">
+    </div>
+  </div>
+  <div id="footer-placeholder"></div>
   <script src="displayToggle.js"></script>
   <script src="contentToggle.js"></script>
+  <script src="../component.js"></script>
 </body>
 </html>
