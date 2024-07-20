@@ -6,7 +6,7 @@
 }
 
 #container > div{
-    width: 25rem;
+    width: 27rem;
 }
 
   .bg-aqua, .callout.callout-info, .alert-info, .label-info, .modal-info .modal-body {
@@ -39,17 +39,19 @@
       z-index: 5;
   }
   .small-box h3 {
-      font-size: 38px;
+      font-size: 18px;
       font-weight: bold;
       margin: 0 0 10px 0;
       white-space: nowrap;
       padding: 0;
+      color:black;
   }
   .small-box h3, .small-box p {
       z-index: 5;
   }
   .small-box p {
-      font-size: 15px;
+      font-size: 20px;
+      color:black;
   }
   p {
       margin: 0 0 10px;
@@ -59,10 +61,10 @@
       -o-transition: all .3s linear;
       transition: all .3s linear;
       position: absolute;
-      top: -10px;
-      right: 10px;
+      top: -8px;
+      right: 5px;
       z-index: 0;
-      font-size: 90px;
+      font-size: 80px;
       color: rgba(0,0,0,0.15);
   }
   .icon > .fa {
