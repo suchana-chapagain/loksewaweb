@@ -6,32 +6,24 @@
   <title>Document</title>
   <link rel="stylesheet" href="compoptstd.css" />
   <link rel="icon" type="image/favicon" href="../assets/Website Logo White.png">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-    <link rel="stylesheet" href="contact.css" />
-    <link rel="stylesheet" href="../components/nav.css" />
-    <link rel="stylesheet" href="../components/footer.css" />
-
-    <!--JQuery Script-->
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+  <link rel="stylesheet" href="../components/nav.css" />
+  <link rel="stylesheet" href="../components/footer.css" />
+  <!-- JQuery Script -->
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
   <div id="nav-placeholder"></div>
   <h1 id="selectMode">Select any one to continue:</h1>
   <div id="container">
     <div class="col-lg-3 col-xs-6">
-      <!-- small box -->
       <div class="small-box bg-aqua">
         <div class="inner" id="modelDiv">
           <h2 data-en="Study" data-ne="अध्ययन गर्नुहोस्">Model Question</h2>
-          <p
-            data-en="Read and Prepare!"
-            data-ne="पढ्नुहोस् र तयारी गर्नुहोस्!"
-          >
-            Read and Prepare!
-          </p>
+          <p data-en="Read and Prepare!" data-ne="पढ्नुहोस् र तयारी गर्नुहोस्!">Read and Prepare!</p>
         </div>
         <div class="icon">
           <i class="fa fa-book"></i>
@@ -39,15 +31,10 @@
       </div>
     </div>
     <div class="col-lg-3 col-xs-6">
-      <!-- small box -->
       <div class="small-box bg-green">
         <div class="inner" id="gkDiv">
-          <h2 data-en="Practice" data-ne="अभ्यास गर्नुहोस्">
-            General Knowledge
-          </h2>
-          <p data-en="Make it Perfect!" data-ne="यसलाई पूर्ण बनाउनुस!">
-            Make it Perfect!
-          </p>
+          <h2 data-en="Practice" data-ne="अभ्यास गर्नुहोस्">General Knowledge</h2>
+          <p data-en="Make it Perfect!" data-ne="यसलाई पूर्ण बनाउनुस!">Make it Perfect!</p>
         </div>
         <div class="icon">
           <i class="fa fa-note-sticky"></i>
@@ -55,13 +42,10 @@
       </div>
     </div>
     <div class="col-lg-3 col-xs-6">
-      <!-- small box -->
       <div class="small-box bg-yellow">
-        <div class="inner">
+        <div class="inner" id="jobDiv">
           <h2 data-en="News" data-ne="समाचार">Job-related Que.</h2>
-          <p data-en="Stay Updated!" data-ne="अद्यावधिक रहनुहोस्!">
-            Stay Updated!
-          </p>
+          <p data-en="Stay Updated!" data-ne="अद्यावधिक रहनुहोस्!">Stay Updated!</p>
         </div>
         <div class="icon">
           <i class="fa fa-newspaper"></i>
@@ -70,8 +54,8 @@
     </div>
   </div>
   <div class="modelContainer" id="modelContent">
-    <input type="checkbox" id="toggle" checked/>
-    <label for="toggle" class="sideToggle">
+    <input type="checkbox" id="toggleModel" checked/>
+    <label for="toggleModel" class="sideToggle">
       <span class="topLine common"></span>
       <span class="middleLine common"></span>
       <span class="bottomLine common"></span>
@@ -85,15 +69,15 @@
       </ul>
     </div>
     <div class="content set1">
-      <embed src="https://firebasestorage.googleapis.com/v0/b/loksewa-authentication.appspot.com/o/ModelSets%2FComputerOperator%2FAnuj%20Acharya_CV.pdf?alt=media&token=57c1c5e1-7c62-4e58-8bc7-2d6c72e372cd" type="application/pdf">
+      <iframe src="https://firebasestorage.googleapis.com/v0/b/loksewa-authentication.appspot.com/o/ModelSets%2FComputerOperator%2FAnuj%20Acharya_CV.pdf?alt=media&token=57c1c5e1-7c62-4e58-8bc7-2d6c72e372cd" type="application/pdf"></iframe>
     </div>
     <div class="content set2">
-      <embed src="https://firebasestorage.googleapis.com/v0/b/loksewa-authentication.appspot.com/o/ModelSets%2FComputerOperator%2FSuchana_CV.pdf?alt=media&token=fb2e3a8a-6eff-48bd-9984-7466edff73ab" type="application/pdf">
+      <iframe src="https://firebasestorage.googleapis.com/v0/b/loksewa-authentication.appspot.com/o/ModelSets%2FComputerOperator%2FSuchana_CV.pdf?alt=media&token=fb2e3a8a-6eff-48bd-9984-7466edff73ab" type="application/pdf"></iframe>
     </div>
   </div>
   <div class="gkContainer" id="gkContent">
-    <input type="checkbox" id="toggle" checked/>
-    <label for="toggle" class="sideToggle">
+    <input type="checkbox" id="toggleGk" checked/>
+    <label for="toggleGk" class="sideToggle">
       <span class="topLine common"></span>
       <span class="middleLine common"></span>
       <span class="bottomLine common"></span>
@@ -107,10 +91,32 @@
       </ul>
     </div>
     <div class="content topic1">
-      <embed src="https://firebasestorage.googleapis.com/v0/b/loksewa-authentication.appspot.com/o/ModelSets%2FComputerOperator%2FAnuj%20Acharya_CV.pdf?alt=media&token=57c1c5e1-7c62-4e58-8bc7-2d6c72e372cd" type="application/pdf">
+      <iframe src="https://firebasestorage.googleapis.com/v0/b/loksewa-authentication.appspot.com/o/ModelSets%2FComputerOperator%2FAnuj%20Acharya_CV.pdf?alt=media&token=57c1c5e1-7c62-4e58-8bc7-2d6c72e372cd" type="application/pdf"></iframe>
     </div>
     <div class="content topic2">
-      <embed src="https://firebasestorage.googleapis.com/v0/b/loksewa-authentication.appspot.com/o/ModelSets%2FComputerOperator%2FSuchana_CV.pdf?alt=media&token=fb2e3a8a-6eff-48bd-9984-7466edff73ab" type="application/pdf">
+      <iframe src="https://firebasestorage.googleapis.com/v0/b/loksewa-authentication.appspot.com/o/ModelSets%2FComputerOperator%2FSuchana_CV.pdf?alt=media&token=fb2e3a8a-6eff-48bd-9984-7466edff73ab" type="application/pdf"></iframe>
+    </div>
+  </div>
+  <div class="jobContainer" id="jobContent">
+    <input type="checkbox" id="toggleJob" checked/>
+    <label for="toggleJob" class="sideToggle">
+      <span class="topLine common"></span>
+      <span class="middleLine common"></span>
+      <span class="bottomLine common"></span>
+    </label>
+    <div class="slide">
+      <h2>Job Topics</h2>
+      <ul>
+        <li><a id="jobSelect1"><i class="fa-solid fa-list"></i>Job Topic 1</a></li>
+        <li><a id="jobSelect2"><i class="fa-solid fa-list"></i>Job Topic 2</a></li>
+        <li><a id="jobSelect3"><i class="fa-solid fa-list"></i>Job Topic 3</a></li>
+      </ul>
+    </div>
+    <div class="content job1">
+      <iframe src="https://firebasestorage.googleapis.com/v0/b/loksewa-authentication.appspot.com/o/ModelSets%2FComputerOperator%2FAnuj%20Acharya_CV.pdf?alt=media&token=57c1c5e1-7c62-4e58-8bc7-2d6c72e372cd" type="application/pdf"></iframe>
+    </div>
+    <div class="content job2">
+      <iframe src="https://firebasestorage.googleapis.com/v0/b/loksewa-authentication.appspot.com/o/ModelSets%2FComputerOperator%2FSuchana_CV.pdf?alt=media&token=fb2e3a8a-6eff-48bd-9984-7466edff73ab" type="application/pdf"></iframe>
     </div>
   </div>
   <div id="footer-placeholder"></div>
