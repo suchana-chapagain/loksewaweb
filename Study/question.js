@@ -102,12 +102,12 @@ let questions = [
   {
     numb: 10,
     question: "  Which HTML tag is used to define an unordered list?  ",
-    answer: "<ul>",
+    answer: "ul",
     options: [
-      "<ol>",
-      "<li>",
-      "<list>",
-      "<ul>"
+      "ol",
+      "li",
+      "list",
+      "ul"
     ]
   },
   {
@@ -146,12 +146,12 @@ let questions = [
   {
     numb: 14,
     question: "  Which HTML tag is used to create a hyperlink?  ",
-    answer: "<a>",
+    answer: "a",
     options: [
-      "<href>",
-      "<link>",
-      "<a>",
-      "<url>"
+      "href",
+      "link",
+      "a",
+      "url"
     ]
   },
   {
