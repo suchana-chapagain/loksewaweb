@@ -1,6 +1,6 @@
 const pdfUrls = [
-    'https://firebasestorage.googleapis.com/v0/b/loksewa-authentication.appspot.com/o/ModelSets%2FComputerOperator%2FAnuj%20Acharya_CV.pdf?alt=media&token=57c1c5e1-7c62-4e58-8bc7-2d6c72e372cd',
-    'https://firebasestorage.googleapis.com/v0/b/loksewa-authentication.appspot.com/o/ModelSets%2FComputerOperator%2FSuchana_CV.pdf?alt=media&token=fb2e3a8a-6eff-48bd-9984-7466edff73ab'
+    'https://firebasestorage.googleapis.com/v0/b/loksewa-authentication.appspot.com/o/ModelSets%2FComputerOperator%2FLoksewa%20Operator%20-1.pdf?alt=media&token=d92080d6-ce1e-4518-b8ca-cc5b4600c686',
+    'https://firebasestorage.googleapis.com/v0/b/loksewa-authentication.appspot.com/o/ModelSets%2FComputerOperator%2FLoksewa%20Operator%20-2.pdf?alt=media&token=523e0f4c-273f-44d6-8761-7439f964da24'
   ];
   
   const scale = 1.5;

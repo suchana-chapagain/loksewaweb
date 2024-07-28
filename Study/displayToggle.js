@@ -1,6 +1,3 @@
-
-
-
 var selectMode = document.getElementById("selectMode");
 const modelDiv = document.querySelector("#modelDiv");
 const gkDiv = document.querySelector("#gkDiv");
@@ -18,6 +15,7 @@ modelDiv.addEventListener('click' , function() {
   gslide.style.display = "none";
   jslide.style.display = "none";
   selectMode.style.display = "none";
+  loadPdf(pdfUrls[0]);
 })
 
 gkDiv.addEventListener('click' , function() {
