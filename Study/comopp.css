@@ -390,8 +390,52 @@ footer button.show{
     opacity: 1;
 }
 @media screen and (max-width: 480px){
- .quiz_box{
-    width:380px;
- }
+
+    .info_box{
+        width: 400px;
+       
+    }
+    
+    .info_box .info-title{
+        height: 60px;
+        width: 100%;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    .info_box .info-list{
+        padding: 10px 15px;
+    }
+    
+    .info_box .info-list .info{
+        margin: 5px 0;
+        font-size: 10px;
+    }
+    
+    .info_box .info-list .info span{
+        font-weight: 300;
+       
+    }
+    .quiz_box{
+        width: 400px;    
+    }
+    
+    
+    .quiz_box header .title{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+    .quiz_box header .timer{
+        height: 35px;
+        width: 140px;
+    }
+    
+    .quiz_box header .timer .time_left_txt{
+        font-weight: 400;
+        font-size: 13px;
+       
+    }
+
 
 }
