@@ -24,6 +24,7 @@ gkDiv.addEventListener('click' , function() {
   mslide.style.display = "none";
   jslide.style.display = "none";
   selectMode.style.display = "none";
+  loadPdf(pdfUrls[0]);
 })
 
 jobDiv.addEventListener('click' , function() {
@@ -32,4 +33,5 @@ jobDiv.addEventListener('click' , function() {
   mslide.style.display = "none";
   gslide.style.display = "none";
   selectMode.style.display = "none";
+  loadPdf(pdfUrls[0]);
 })

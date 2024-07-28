@@ -394,46 +394,9 @@ input:checked ~ .content {
   transition: margin-left 0.5s ease;
 }
 
-.set2 {
-  display: none;
-}
-
-.gkContainer {
-  font-family: "Poppins";
-  margin-top: 28px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  display: none;
-}
-
-.gkContainer > input {
-  display: none;
-  visibility: hidden;
-  -webkit-appearance: none;
-}
-
-.topic2 {
-  display: none;
-}
-
-.jobContainer {
-  font-family: "Poppins";
-  margin-top: 28px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  display: none;
-}
-
-.jobContainer > input {
-  display: none;
-  visibility: hidden;
-  -webkit-appearance: none;
-}
-
-.job2 {
-  display: none;
+.pdf-viewer{
+  max-height: 100vh;
+  overflow: auto;
 }
 
 /* Tablet and Mobile Responsiveness */
