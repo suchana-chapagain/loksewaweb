@@ -84,6 +84,10 @@ const pdfUrls = [
   document.querySelector('.prev-page').addEventListener('click', showPrevPage);
   document.querySelector('.next-page').addEventListener('click', showNextPage);
   
-  document.getElementById('load-pdf-1').addEventListener('click', () => loadPdf(pdfUrls[0]));
-  document.getElementById('load-pdf-2').addEventListener('click', () => loadPdf(pdfUrls[1]));
+  document.getElementById('modelSelect1').addEventListener('click', () => loadPdf(pdfUrls[0]));
+  document.getElementById('modelSelect2').addEventListener('click', () => loadPdf(pdfUrls[1]));
+  document.getElementById('gkSelect1').addEventListener('click', () => loadPdf(pdfUrls[0]));
+  document.getElementById('gkSelect2').addEventListener('click', () => loadPdf(pdfUrls[1]));
+  document.getElementById('jobSelect1').addEventListener('click', () => loadPdf(pdfUrls[0]));
+  document.getElementById('jobSelect2').addEventListener('click', () => loadPdf(pdfUrls[1]));
   

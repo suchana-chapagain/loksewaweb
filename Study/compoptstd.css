@@ -41,6 +41,10 @@ body > h1 {
   margin-top: 20px;
 }
 
+.studyContainer{
+  height: auto;
+}
+
 #container {
   font-family: "Poppins";
   display: flex;
@@ -220,7 +224,7 @@ a {
   background-color: transparent;
 }
 
-.modelContainer {
+.contentContainer {
   font-family: "Poppins";
   margin-top: 28px;
   display: flex;
@@ -268,7 +272,7 @@ ul li a i {
   text-align: center;
 }
 
-.modelContainer > input {
+.contentContainer > input {
   display: none;
   visibility: hidden;
   -webkit-appearance: none;

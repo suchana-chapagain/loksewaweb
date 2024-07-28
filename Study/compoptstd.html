@@ -18,6 +18,7 @@
 <body>
   <div id="nav-placeholder"></div>
   <h1 id="selectMode">Select any one to continue:</h1>
+  <div class="studyContainer">
   <div id="container">
     <div class="col-lg-3 col-xs-6">
       <div class="small-box bg-aqua">
@@ -53,14 +54,14 @@
       </div>
     </div>
   </div>
-  <div class="modelContainer" id="modelContent">
+  <div class="contentContainer" id="content">
     <input type="checkbox" id="toggleModel" checked/>
     <label for="toggleModel" class="sideToggle">
       <span class="topLine common"></span>
       <span class="middleLine common"></span>
       <span class="bottomLine common"></span>
     </label>
-    <div class="slide">
+    <div class="slide" id="modelSlide">
       <h2>Model Sets</h2>
       <ul>
         <li><a id="modelSelect1"><i class="fa-solid fa-list"></i>Model Set 1</a></li>
@@ -68,30 +69,7 @@
         <li><a id="modelSelect3"><i class="fa-solid fa-list"></i>Model Set 3</a></li>
       </ul>
     </div>
-    <div class="content">
-      <div class="top-bar">
-        <button class="btn" id="prev-page">
-          <i class="fas fa-arrow-circle-left"></i> Prev Page
-        </button>
-        <span class="page-info">
-          Page <span id="page-num"></span> of <span id="page-count"></span>
-        </span>
-        <button class="btn" id="next-page">
-          Next Page <i class="fas fa-arrow-circle-right"></i>
-        </button>
-      </div>
-  
-      <canvas id="pdf-render"></canvas>
-    </div>
-  </div>
-  <div class="gkContainer" id="gkContent">
-    <input type="checkbox" id="toggleGk" checked/>
-    <label for="toggleGk" class="sideToggle">
-      <span class="topLine common"></span>
-      <span class="middleLine common"></span>
-      <span class="bottomLine common"></span>
-    </label>
-    <div class="slide">
+    <div class="slide" id="gkSlide">
       <h2>GK Topics</h2>
       <ul>
         <li><a id="gkSelect1"><i class="fa-solid fa-list"></i>Topic 1</a></li>
@@ -99,21 +77,7 @@
         <li><a id="gkSelect3"><i class="fa-solid fa-list"></i>Topic 3</a></li>
       </ul>
     </div>
-    <div class="content topic1">
-      <iframe src="https://firebasestorage.googleapis.com/v0/b/loksewa-authentication.appspot.com/o/ModelSets%2FComputerOperator%2FAnuj%20Acharya_CV.pdf?alt=media&token=57c1c5e1-7c62-4e58-8bc7-2d6c72e372cd" type="application/pdf"></iframe>
-    </div>
-    <div class="content topic2">
-      <iframe src="https://firebasestorage.googleapis.com/v0/b/loksewa-authentication.appspot.com/o/ModelSets%2FComputerOperator%2FSuchana_CV.pdf?alt=media&token=fb2e3a8a-6eff-48bd-9984-7466edff73ab" type="application/pdf"></iframe>
-    </div>
-  </div>
-  <div class="jobContainer" id="jobContent">
-    <input type="checkbox" id="toggleJob" checked/>
-    <label for="toggleJob" class="sideToggle">
-      <span class="topLine common"></span>
-      <span class="middleLine common"></span>
-      <span class="bottomLine common"></span>
-    </label>
-    <div class="slide">
+    <div class="slide" id="jobSlide">
       <h2>Job Topics</h2>
       <ul>
         <li><a id="jobSelect1"><i class="fa-solid fa-list"></i>Job Topic 1</a></li>
@@ -121,18 +85,28 @@
         <li><a id="jobSelect3"><i class="fa-solid fa-list"></i>Job Topic 3</a></li>
       </ul>
     </div>
-    <div class="content job1">
-      <iframe src="https://firebasestorage.googleapis.com/v0/b/loksewa-authentication.appspot.com/o/ModelSets%2FComputerOperator%2FAnuj%20Acharya_CV.pdf?alt=media&token=57c1c5e1-7c62-4e58-8bc7-2d6c72e372cd" type="application/pdf"></iframe>
-    </div>
-    <div class="content job2">
-      <iframe src="https://firebasestorage.googleapis.com/v0/b/loksewa-authentication.appspot.com/o/ModelSets%2FComputerOperator%2FSuchana_CV.pdf?alt=media&token=fb2e3a8a-6eff-48bd-9984-7466edff73ab" type="application/pdf"></iframe>
+    <div class="content">
+      <div class="pdf-viewer" id="pdf-viewer">
+        <div class="top-bar">
+          <button class="btn prev-page">
+            <i class="fas fa-arrow-circle-left"></i> Prev Page
+          </button>
+          <span class="page-info">
+            Page <span class="page-num"></span> of <span class="page-count"></span>
+          </span>
+          <button class="btn next-page">
+            Next Page <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+        <canvas class="pdf-render"></canvas>
+      </div>
     </div>
   </div>
+</div>
   <div id="footer-placeholder"></div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js" integrity="sha512-Z8CqofpIcnJN80feS2uccz+pXWgZzeKxDsDNMD/dJ6997/LSRY+W4NmEt9acwR+Gt9OHN0kkI1CTianCwoqcjQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="pdfViewer.js"></script>
   <script src="displayToggle.js"></script>
-  <script src="contentToggle.js"></script>
   <script src="../component.js"></script>
 </body>
 </html>
