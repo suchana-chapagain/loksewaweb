@@ -68,11 +68,20 @@
         <li><a id="modelSelect3"><i class="fa-solid fa-list"></i>Model Set 3</a></li>
       </ul>
     </div>
-    <div class="content set1">
-      <object data="https://firebasestorage.googleapis.com/v0/b/loksewa-authentication.appspot.com/o/ModelSets%2FComputerOperator%2FAnuj%20Acharya_CV.pdf?alt=media&token=57c1c5e1-7c62-4e58-8bc7-2d6c72e372cd" type="application/pdf"></object>
-    </div>
-    <div class="content set2">
-      <object data="https://firebasestorage.googleapis.com/v0/b/loksewa-authentication.appspot.com/o/ModelSets%2FComputerOperator%2FSuchana_CV.pdf?alt=media&token=fb2e3a8a-6eff-48bd-9984-7466edff73ab" type="application/pdf"></object>
+    <div class="content">
+      <div class="top-bar">
+        <button class="btn" id="prev-page">
+          <i class="fas fa-arrow-circle-left"></i> Prev Page
+        </button>
+        <span class="page-info">
+          Page <span id="page-num"></span> of <span id="page-count"></span>
+        </span>
+        <button class="btn" id="next-page">
+          Next Page <i class="fas fa-arrow-circle-right"></i>
+        </button>
+      </div>
+  
+      <canvas id="pdf-render"></canvas>
     </div>
   </div>
   <div class="gkContainer" id="gkContent">
@@ -120,6 +129,8 @@
     </div>
   </div>
   <div id="footer-placeholder"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js" integrity="sha512-Z8CqofpIcnJN80feS2uccz+pXWgZzeKxDsDNMD/dJ6997/LSRY+W4NmEt9acwR+Gt9OHN0kkI1CTianCwoqcjQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="pdfViewer.js"></script>
   <script src="displayToggle.js"></script>
   <script src="contentToggle.js"></script>
   <script src="../component.js"></script>
