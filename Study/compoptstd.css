@@ -234,7 +234,7 @@ a {
 }
 
 .slide {
-  height: 100%;
+  height: 100vh;
   width: 220px;
   left: 0;
   position: absolute;
@@ -376,25 +376,20 @@ input:checked ~ .slide {
 
 canvas{
   width: 100%;
-  
+  height: 100%;
 }
 
 
 .content {
-  min-height: 90vh;
-  padding: 1rem;
+  min-height: 100vh;
   flex-grow: 1;
   margin-left: 0;
   transition: margin-left 0.5s ease;
   background-color: #fff;
 }
 
-.content > object {
-  width: 100%;
-  height: 95vh;
-}
-
 input:checked ~ .content {
+  min-height: 100vh;
   margin-left: 240px;
   transition: margin-left 0.5s ease;
 }
@@ -454,8 +449,13 @@ input:checked ~ .content {
   }
 
   .sideToggle {
-    top: 380px;
+    top: 770px;
   }
+
+  .content{
+    min-height: auto;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -465,7 +465,11 @@ input:checked ~ .content {
 
   .slide {
     width: 180px; /* Adjusted sidebar width for smaller screens */
-    height: 94.4%;
+    /* height: 94.4%; */
+  }
+
+  .content{
+    min-height: auto;
   }
 
   input:checked ~ .content {
@@ -480,7 +484,11 @@ input:checked ~ .content {
 @media (max-width: 480px) {
   .slide {
     width: 160px; /* Further adjust sidebar width for very small screens */
-    height: 94.4%;
+    /* height: 94.4%; */
+  }
+
+  .sideToggle {
+    top: 725px;
   }
 
   input:checked ~ .content {
@@ -491,7 +499,24 @@ input:checked ~ .content {
     width: calc(100% - 20px); /* Full width on small mobile devices */
   }
 
+  .content{
+    min-height: auto;
+  }
+
   .content > object {
     height: 70vh; /* Further adjust height for very small screens */
+  }
+
+  .btn{
+    padding: 6px;
+    border-radius: 50%;
+  }
+
+  .btn > span{
+    display: none;
+  }
+
+  .page-info{
+    font-size: 12px;
   }
 }
