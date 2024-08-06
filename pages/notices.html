@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notice Page</title>
+    <link rel="stylesheet" href="notices.css" />
+
+    <link
+      rel="icon"
+      type="image/favicon"
+      href="../assets/Website Logo White.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../components/nav.css" />
+    <link rel="stylesheet" href="../components/footer.css" />
+    <!-- JQuery Script -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="nav-placeholder"></div>
+    <div class="container">
+      <h1>Notices Page</h1>
+      <div class="upload-panel" style="display: none">
+        <h2>Upload Notice</h2>
+        <form id="uploadForm">
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title" required /><br /><br />
+          <label for="pdfFile">PDF File:</label>
+          <input
+            type="file"
+            id="pdfFile"
+            name="pdfFile"
+            accept="application/pdf"
+            required
+          /><br /><br />
+          <input type="submit" value="Upload" />
+        </form>
+      </div>
+
+      <div class="notices-panel">
+        <h2>Recent News and Notices</h2>
+        <div id="noticeList"></div>
+      </div>
+    </div>
+    <div id="footer-placeholder"></div>
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
+      import {
+        getStorage,
+        ref,
+        uploadBytesResumable,
+        getDownloadURL,
+      } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-storage.js";
+      import {
+        getFirestore,
+        collection,
+        addDoc,
+        getDocs,
+      } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore.js";
+      import {
+        getAuth,
+        onAuthStateChanged,
+      } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js";
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyCFvgep4c6TFS8sRg92GBxM45r6lYeA63w",
+        authDomain: "loksewa-authentication.firebaseapp.com",
+        projectId: "loksewa-authentication",
+        storageBucket: "loksewa-authentication.appspot.com",
+        messagingSenderId: "325243528377",
+        appId: "1:325243528377:web:28214e9db9d4fa4680a768",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+
+      const db = getFirestore(app);
+      const storage = getStorage(app);
+      const auth = getAuth(app);
+
+      onAuthStateChanged(auth, (user) => {
+            if (user) {
+                // Example condition to show the upload panel
+                if (user.email === 'acharyaanuj554@gmail.com' || user.email === 'suchanachapagain1@gmail.com') {
+                    document.querySelector(".upload-panel").style.display = "block";
+                }
+            } else {
+                // User is signed out
+                document.querySelector(".upload-panel").style.display = "none";
+            }
+        });
+
+      document
+        .getElementById("uploadForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          const title = document.getElementById("title").value;
+          const pdfFile = document.getElementById("pdfFile").files[0];
+
+          if (pdfFile) {
+            const storageRef = ref(storage, "notices/" + pdfFile.name);
+            const uploadTask = uploadBytesResumable(storageRef, pdfFile);
+
+            uploadTask.on(
+              "state_changed",
+              function (snapshot) {
+                // Observe state change events such as progress, pause, and resume
+              },
+              function (error) {
+                console.error("Upload failed:", error);
+              },
+              function () {
+                getDownloadURL(storageRef).then(function (downloadURL) {
+                  const date = new Date().toISOString().split("T")[0]; // Getting the current date
+                  addDoc(collection(db, "notices"), {
+                    title: title,
+                    pdfUrl: downloadURL,
+                    date: date,
+                  })
+                    .then(function () {
+                      document.getElementById("uploadForm").reset();
+                      loadNotices();
+                    })
+                    .catch(function (error) {
+                      console.error("Error adding notice to Firestore:", error);
+                    });
+                });
+              }
+            );
+          }
+        });
+
+      function loadNotices() {
+        const noticeList = document.getElementById("noticeList");
+        noticeList.innerHTML = "";
+
+        getDocs(collection(db, "notices"))
+          .then(function (querySnapshot) {
+            querySnapshot.forEach(function (doc) {
+              const notice = doc.data();
+              const div = document.createElement("div");
+              div.className = "notice";
+              const title = document.createElement("h3");
+              title.innerText = notice.title;
+              const date = document.createElement("p");
+              date.className = "date";
+              date.innerText = `Added on: ${notice.date}`;
+              const link = document.createElement("a");
+              link.href = "#";
+              link.href = notice.pdfUrl;
+              link.download = notice.title;
+              link.innerText = "Download PDF";
+              div.appendChild(title);
+              div.appendChild(date);
+              div.appendChild(link);
+              noticeList.appendChild(div);
+            });
+          })
+          .catch(function (error) {
+            console.error("Error loading notices:", error);
+          });
+      }
+
+      window.onload = loadNotices;
+    </script>
+    <script src="../component.js"></script>
+  </body>
+</html>
