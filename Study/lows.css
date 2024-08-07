@@ -275,7 +275,7 @@ ul li {
 .contentContainer > input {
   display: none;
   visibility: hidden;
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
 }
 
 .sideToggle {
@@ -481,5 +481,11 @@ input:checked ~ .content {
 
   .page-info {
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 360px) and (min-width: 284px){
+  .sideToggle{
+    top: 715px;
   }
 }

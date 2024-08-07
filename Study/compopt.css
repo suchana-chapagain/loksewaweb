@@ -275,7 +275,7 @@ ul li {
 .contentContainer > input {
   display: none;
   visibility: hidden;
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
 }
 
 .sideToggle {
