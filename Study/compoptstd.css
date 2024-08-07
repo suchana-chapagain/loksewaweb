@@ -8,11 +8,9 @@
   height: 130px !important;
 }
 
-
-
 @media screen and (max-width: 1280px) {
   .logoSection {
-    height: 160px !important;
+    height: 130px !important;
   }
 
   .nav-links {
@@ -23,7 +21,7 @@
 
 @media screen and (max-width: 480px) {
   .logoSection {
-    height: 110px !important;
+    height: 80px !important;
   }
 
   .nav-links {
@@ -43,7 +41,7 @@ body > h1 {
   margin-top: 20px;
 }
 
-.studyContainer{
+.studyContainer {
   height: auto;
 }
 
@@ -378,11 +376,10 @@ input:checked ~ .slide {
   padding: 1rem;
 }
 
-canvas{
+canvas {
   width: 100%;
   height: 100%;
 }
-
 
 .content {
   min-height: 100vh;
@@ -398,7 +395,7 @@ input:checked ~ .content {
   transition: margin-left 0.5s ease;
 }
 
-.pdf-viewer{
+.pdf-viewer {
   max-height: 100vh;
   overflow: auto;
 }
@@ -416,13 +413,12 @@ input:checked ~ .content {
   }
 
   .sideToggle {
-    top: 770px;
+    top: 740px;
   }
 
-  .content{
+  .content {
     min-height: auto;
   }
-
 }
 
 @media (max-width: 768px) {
@@ -435,7 +431,7 @@ input:checked ~ .content {
     /* height: 94.4%; */
   }
 
-  .content{
+  .content {
     min-height: auto;
   }
 
@@ -455,7 +451,7 @@ input:checked ~ .content {
   }
 
   .sideToggle {
-    top: 725px;
+    top: 690px;
   }
 
   input:checked ~ .content {
@@ -466,7 +462,7 @@ input:checked ~ .content {
     width: calc(100% - 20px); /* Full width on small mobile devices */
   }
 
-  .content{
+  .content {
     min-height: auto;
   }
 
@@ -474,16 +470,16 @@ input:checked ~ .content {
     height: 70vh; /* Further adjust height for very small screens */
   }
 
-  .btn{
+  .btn {
     padding: 6px;
     border-radius: 50%;
   }
 
-  .btn > span{
+  .btn > span {
     display: none;
   }
 
-  .page-info{
+  .page-info {
     font-size: 12px;
   }
 }
