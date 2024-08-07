@@ -1,56 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="kharidar.css">
-    <link
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="kharidar.css" />
+  <link rel="icon" type="image/favicon" href="../assets/Website Logo White.png">
+  <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
   />
+  <link rel="stylesheet" href="../components/nav.css" />
+  <link rel="stylesheet" href="../components/footer.css" />
+  <link rel="stylesheet" href="../components/languageToggle.css" />
+  <!-- JQuery Script -->
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
-    <div id="container">
-        <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
-          <div class="small-box bg-aqua">
-            <div class="inner">
-              <h3 data-en="Model Questions" data-ne="मोडेल  प्रश्न">Model Questions</h3>
-              <p data-en="Ask questions, for it is the beginning of new knowledge and understanding." data-ne="प्रश्न सोध्नुस्, किनकि यो नयाँ ज्ञान र समझदारीको सुरुवात हो।">Ask questions, for it is the beginning of new knowledge and understanding.</p>
-            </div>
-            
-            <a href="ModelQuestions.html" class="small-box-footer" data-en="More info" data-ne="अधिक जानकारी">
-              More info <i class="fa fa-arrow-circle-right"></i>
-            </a>
-          </div>
+  <div id="nav-placeholder"></div>
+  <div id="langToggle-placeholder"></div>
+  <h1 id="selectMode" data-en="Select any one to continue:" data-ne="कृपया एउटा छान्नुहोस् र अगाडि बढ्नुहोस्:">Select any one to continue:</h1>
+<div class="studyContainer">
+  <div id="container">
+    <div class="col-lg-3 col-xs-6">
+      <div class="small-box bg-aqua">
+        <div class="inner" id="modelDiv">
+          <h2 data-en="Model Question" data-ne="मोडेल प्रश्न">Model Question</h2>
+          <p data-en="Read and Prepare!" data-ne="पढ्नुहोस् र तयारी गर्नुहोस्!">Read and Prepare!</p>
         </div>
-        <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
-          <div class="small-box bg-green">
-            <div class="inner">
-              <h3 data-en="General Knowledge" data-ne="सामान्य ज्ञान">General Knowledge </h3>
-              <p data-en="Knowledge is the eye of desire and can become the pilot of the soul." data-ne="ज्ञान चाहनाको आँखा हो र आत्माको पाइलट बन्न सक्छ।">Knowledge is the eye of desire and can become the pilot of the soul.</p>
-            </div>
-            
-            <a href="General Knowlegde.html" class="small-box-footer">
-              More info <i class="fa fa-arrow-circle-right"></i>
-            </a>
-          </div>
+        <div class="icon">
+          <i class="fa fa-book"></i>
         </div>
-        <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
-          <div class="small-box bg-yellow">
-            <div class="inner">
-              <h3 data-en="Job Based knowledge" data-ne="सेवा सम्बन्धित कार्य-ज्ञान">Job Based - knowledge</h3>
-              <p data-en="Continuous learning is the minimum requirement for success in any field." data-ne="निरन्तर सिकाइ कुनै पनि क्षेत्रमा सफलताको न्यूनतम आवश्यकता हो।">Continuous learning is the minimum requirement for success in any field.</p>
-            </div>
-            <a href="Job Based - knowledge.html" class="small-box-footer"data-en="More info" data-ne="अधिक जानकारी">
-              More info <i class="fa fa-arrow-circle-right"></i>
-            </a>
-          </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-xs-6">
+      <div class="small-box bg-green">
+        <div class="inner" id="gkDiv">
+          <h2 data-en="General Knowledge" data-ne="सामान्य ज्ञान">General Knowledge</h2>
+          <p data-en="Knowledge empowers, wisdom enlightens." data-ne="ज्ञानले शक्ति दिन्छ, बुद्धिले प्रकाश पुर्याउछ">Knowledge empowers, wisdom enlightens, grow.</p>
         </div>
-     
+        <div class="icon">
+          <i class="fa fa-note-sticky"></i>
         </div>
-     </body>
+      </div>
+    </div>
+    <div class="col-lg-3 col-xs-6">
+      <div class="small-box bg-yellow">
+        <div class="inner" id="jobDiv">
+          <h2 data-en="IQ" data-ne="आइ क्यु">IQ</h2>
+          <p data-en="Important Ones are Selected" data-ne="महत्त्वपूर्ण छनौट गरि राखिएको">Important Ones are Selected</p>
+        </div>
+        <div class="icon">
+          <i class="fa fa-newspaper"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contentContainer" id="content">
+    <input type="checkbox" id="toggleModel" checked/>
+    <label for="toggleModel" class="sideToggle">
+      <span class="topLine common"></span>
+      <span class="middleLine common"></span>
+      <span class="bottomLine common"></span>
+    </label>
+    <div class="slide" id="modelSlide">
+      <h2 data-en="Model Sets" data-ne="मोडेल सेटहरू">Model Sets</h2>
+      <ul>
+        <li><a id="modelSelect1"><i class="fa-solid fa-list"></i> <span data-en="Model Set 1" data-ne="मोडेल सेट १">Model Set 1</span></a></li>
+        <li><a id="modelSelect2"><i class="fa-solid fa-list"></i> <span data-en="Model Set 2" data-ne="मोडेल सेट २">Model Set 2</span></a></li>
+        <li><a id="modelSelect3"><i class="fa-solid fa-list"></i> <span data-en="Model Set 3" data-ne="मोडेल सेट ३">Model Set 3</span></a></li>
+      </ul>
+    </div>
+    <div class="slide" id="gkSlide">
+      <h2 data-en="GK Topics" data-ne="जीके विषयहरू">GK Topics</h2>
+      <ul>
+        <li><a id="gkSelect1"><i class="fa-solid fa-list"></i> <span data-en="Topic 1" data-ne="विषय १">Topic 1</span></a></li>
+        <li><a id="gkSelect2"><i class="fa-solid fa-list"></i> <span data-en="Topic 2" data-ne="विषय २">Topic 2</span></a></li>
+        <li><a id="gkSelect3"><i class="fa-solid fa-list"></i> <span data-en="Topic 3" data-ne="विषय ३">Topic 3</span></a></li>
+      </ul>
+    </div>
+    <div class="slide" id="jobSlide">
+      <h2 data-en="IQ Topics" data-ne="आइ क्यु विषयहरू">IQ Topics</h2>
+      <ul>
+        <li><a id="jobSelect1"><i class="fa-solid fa-list"></i> <span data-en="IQ Topic 1" data-ne="रोजगारी विषय १">Job Topic 1</span></a></li>
+        <li><a id="jobSelect2"><i class="fa-solid fa-list"></i> <span data-en="IQ Topic 2" data-ne="रोजगारी विषय २">Job Topic 2</span></a></li>
+        <li><a id="jobSelect3"><i class="fa-solid fa-list"></i> <span data-en="IQ Topic 3" data-ne="रोजगारी विषय ३">Job Topic 3</span></a></li>
+      </ul>
+    </div>
+    
+    <div class="content">
+      <div class="pdf-viewer" id="pdf-viewer">
+        <div class="top-bar">
+          <button class="btn prev-page">
+            <i class="fas fa-arrow-circle-left"></i> <span  data-en="Prev Page" data-ne="अघिल्लो पृष्ठ">Prev Page</span>
+          </button>
+          <span class="page-info">Page <span class="page-num"></span> of <span class="page-count"></span></span>
+          <button class="btn next-page">
+            <span  data-en="Next Page" data-ne="अर्को पृष्ठ">Next Page</span> <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+        <canvas class="pdf-render"></canvas>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div id="footer-placeholder"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js" integrity="sha512-Z8CqofpIcnJN80feS2uccz+pXWgZzeKxDsDNMD/dJ6997/LSRY+W4NmEt9acwR+Gt9OHN0kkI1CTianCwoqcjQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="pdfViewer.js"></script>
+  <script src="displayToggle.js"></script>
+  <script src="../component.js"></script>
+</body>
 </html>
