@@ -305,9 +305,9 @@
 
 
 
-@media screen and (max-width: 768px) and (min-width: 370px){
+@media screen and (max-width: 768px) and (min-width: 350px){
     .abouthead h1{
-        font-size: 4.5rem;
+        font-size: 4rem;
         text-align: center;
     }
 
@@ -315,8 +315,13 @@
         height: 400px;
     }
 
+    .workDesc > h1{
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
     .services{
-        height: 1200px;
+        height: 1300px;
     }
 
     .services .srow{
@@ -325,8 +330,8 @@
     }
 
     .services .srow .scol img{
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
     }
 
     .capabilities{
@@ -381,6 +386,22 @@
 
     .ourDesc .orow .ocol img{
         margin-top: -60px;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 400px){
+    .services{
+        height: 1200px;
+    }
+
+    .services .srow{
+        display: block;
+        padding: 30px 0px;
+    }
+
+    .services .srow .scol img{
+        width: 250px;
+        height: 250px;
     }
 }
 

@@ -39,6 +39,17 @@
     <div class="container">
       <div id="nav-placeholder"></div>
       <div id="langToggle-placeholder"></div>
+      <div class="notices-marquee-container">
+        <div class="recent-news">
+            <h3 data-en="Recent News and Notices" data-ne="हालका समाचार र सूचनाहरू">
+                Recent News and Notices
+            </h3>
+        </div>
+        <div class="vertical-line"></div>
+        <div class="marquee-container">
+            <marquee id="noticeMarquee" behavior="scroll" direction="left">Loading notices...</marquee>
+        </div>
+    </div>
       <header>
         <div class="heroText">
           <h1
@@ -419,5 +430,63 @@
     <!--Language Toggle Script-->
     <script src="languageToggle.js" defer></script>
   </script>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
+    import {
+        getFirestore,
+        collection,
+        getDocs,
+        query,
+        orderBy
+    } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore.js";
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyCFvgep4c6TFS8sRg92GBxM45r6lYeA63w",
+        authDomain: "loksewa-authentication.firebaseapp.com",
+        projectId: "loksewa-authentication",
+        storageBucket: "loksewa-authentication.appspot.com",
+        messagingSenderId: "325243528377",
+        appId: "1:325243528377:web:28214e9db9d4fa4680a768",
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+
+    const db = getFirestore(app);
+
+    function loadNotices() {
+        const noticeMarquee = document.getElementById("noticeMarquee");
+        noticeMarquee.innerHTML = "";
+
+        const noticesQuery = query(collection(db, "notices"), orderBy("date", "desc"));
+
+        getDocs(noticesQuery)
+            .then(function (querySnapshot) {
+                let notices = [];
+                querySnapshot.forEach(function (doc) {
+                    const notice = doc.data();
+                    notices.push({
+                        title: notice.title,
+                        pdfUrl: notice.pdfUrl
+                    });
+                });
+
+                if (notices.length > 0) {
+                    noticeMarquee.innerHTML = notices.map(notice => 
+                        `<a href="${notice.pdfUrl}" download="${notice.title}">${notice.title}</a>`
+                    ).join(" | ");
+                } else {
+                    noticeMarquee.innerHTML = "No notices found.";
+                }
+            })
+            .catch(function (error) {
+                console.error("Error loading notices:", error);
+                noticeMarquee.innerHTML = "Error loading notices.";
+            });
+    }
+
+    window.onload = loadNotices;
+</script>
   </body>
 </html>

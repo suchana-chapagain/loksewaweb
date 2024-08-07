@@ -484,8 +484,4 @@ input:checked ~ .content {
   }
 }
 
-@media screen and (max-width: 360px) and (min-width: 284px){
-  .sideToggle{
-    top: 715px;
-  }
-}
+

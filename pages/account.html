@@ -31,13 +31,14 @@
     <section class="container forms" id="loginForm">
       <div class="form login">
         <div class="form-content">
-          <header>Login</header>
+          <header data-en="Login" data-ne="लग इन">Login</header>
           <form action="#">
             <div class="field input-field">
               <input
                 type="email"
                 id="loginEmail"
-                placeholder="Email"
+                data-en-placeholder="Email"
+                data-ne-placeholder="इमेल"
                 class="input"
               />
             </div>
@@ -45,7 +46,8 @@
               <input
                 type="password"
                 id="loginPassword"
-                placeholder="Password"
+                data-en-placeholder="Password"
+                data-ne-placeholder="पासवर्ड"
                 class="password"
               />
               <i class="bx bx-hide eye-icon"></i>
@@ -55,44 +57,46 @@
                 class="forgot-pass"
                 id="resetPass"
                 style="cursor: pointer"
+                data-en="Forgot Password?"
+                data-ne="पासवर्ड बिर्सनुभयो?"
                 >Forgot password?</a
               >
             </div>
             <div class="field button-field">
-              <button type="button" id="login">Login</button>
+              <button type="button" id="login" data-en="Login" data-ne="लग इन">Login</button>
             </div>
           </form>
           <div class="form-link">
-            <span
-              >Don't have an account?
-              <a href="#" class="link signup-link">Sign Up</a></span
-            >
+            <span><span data-en="Don't have an account?" data-ne="अकाउन्ट छैन?"
+              >Don't have an account?</span>
+              <a href="#" class="link signup-link" data-en="Sign Up" data-ne="साइन अप">Sign Up</a></span>
           </div>
         </div>
         <div class="line"></div>
         <div class="media-options">
           <a href="#" class="field github" id="github-login-btn">
             <i class="bx bxl-github github-icon"></i>
-            <span>Login with GitHub</span>
+            <span data-en="Login with GitHub" data-ne="गिटहब बाट लगइन">Login with GitHub</span>
           </a>
         </div>
         <div class="media-options">
           <a href="#" class="field google" id="google-login-btn">
             <img src="/assets/google.png" class="google-img" />
-            <span>Login with Google</span>
+            <span data-en="Login with Google" data-ne="गूगल बाट लगइन">Login with Google</span>
           </a>
         </div>
       </div>
 
       <div class="form signup">
         <div class="form-content">
-          <header>Sign Up</header>
+          <header data-en="Sign Up" data-ne="साइन अप">Sign Up</header>
           <form action="#">
             <div class="field input-field">
               <input
                 type="email"
                 id="signUpEmail"
-                placeholder="Email"
+                data-en-placeholder="Email"
+                data-ne-placeholder="इमेल"
                 class="input"
               />
             </div>
@@ -100,7 +104,8 @@
               <input
                 type="password"
                 id="signUpPassword"
-                placeholder="Create password"
+                data-en-placeholder="Create Password"
+                data-ne-placeholder="पासवर्ड लेख्नुहोस"
                 class="password"
               />
               <i class="bx bx-hide eye-icon"></i>
@@ -109,18 +114,19 @@
               <input
                 type="text"
                 id="signUpUsername"
-                placeholder="Create Username"
+                data-en-placeholder="Create Username"
+                data-ne-placeholder="नाम लेख्नुहोस"
                 class="username"
               />
             </div>
             <div class="field button-field">
-              <button type="button" id="signUp">Sign Up</button>
+              <button type="button" id="signUp" data-en="Sign Up" data-ne="साइन अप">Sign Up</button>
             </div>
           </form>
           <div class="form-link">
-            <span
-              >Already have an account?
-              <a href="#" class="link login-link">Login</a></span
+            <span><span data-en="Already have an account?" data-ne="अकाउन्ट बनाईसक्नु भएको छ?"
+              >Already have an account?</span>
+              <a href="#" class="link login-link" data-en="Login" data-ne="लग इन">Login</a></span
             >
           </div>
         </div>
@@ -128,13 +134,13 @@
         <div class="media-options">
           <a href="#" class="field github" id="github-login-btn2">
             <i class="bx bxl-github github-icon"></i>
-            <span>Login with GitHub</span>
+            <span data-en="Login with GitHub" data-ne="गिटहब बाट लगइन">Login with GitHub</span>
           </a>
         </div>
         <div class="media-options">
           <a href="#" class="field google" id="google-login-btn2">
             <img src="/assets/google.png" alt="" class="google-img" />
-            <span>Login with Google</span>
+            <span data-en="Login with Google" data-ne="गूगल बाट लगइन">Login with Google</span>
           </a>
         </div>
       </div>
