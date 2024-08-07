@@ -1,0 +1,12 @@
+[redirects]
+[[redirects]]
+  from = "/notices"
+  to = "/pages/notices.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/about"
+  to = "/pages/about.html"
+  status = 200
+  force = true
