@@ -1,6 +1,3 @@
-[build]
-  publish = "public"
-
 [[redirects]]
   from = "/notices"
   to = "/pages/notices.html"
