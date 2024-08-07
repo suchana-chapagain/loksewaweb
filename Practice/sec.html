@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Computer Operator</title>
-    <link rel="stylesheet" href="compoptprac.css" />
+    <link rel="stylesheet" href="compopt.css" />
 
     <link
       rel="stylesheet"
@@ -20,12 +20,12 @@
     <!-- JQuery Script -->
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   </head>
-
   <body>
     <div id="nav-placeholder"></div>
     <div id="langToggle-placeholder"></div>
     <div class="quizSection">
       <div class="start_btn"><button>Start Quiz</button></div>
+
       <div class="info_box">
         <div class="info-title"><span>Some Rules of this Quiz</span></div>
         <div class="info-list">
@@ -50,23 +50,27 @@
           <button class="restart">Continue</button>
         </div>
       </div>
+
       <div class="quiz_box">
         <header>
-          <div class="title">Computer Operator</div>
+          <div class="title">Nayab Subba</div>
           <div class="timer">
             <div class="time_left_txt">Time Left</div>
             <div class="timer_sec">15</div>
           </div>
+          <div class="time_line"></div>
         </header>
         <section>
           <div class="que_text"></div>
           <div class="option_list"></div>
         </section>
+
         <footer id="quizFooter">
           <div class="total_que"></div>
           <button class="next_btn">Next Question</button>
         </footer>
       </div>
+
       <div class="result_box">
         <div class="icon">
           <i class="fas fa-crown"></i>
@@ -78,12 +82,13 @@
           <button class="quit">Quit Quiz</button>
         </div>
       </div>
+
       <canvas id="my-canvas"></canvas>
     </div>
     <div id="footer-placeholder"></div>
     <script src="quiz.js"></script>
-    <script src="question.js"></script>
     <script src="index.js"></script>
+    <script src="sec.js"></script>
     <script src="../component.js"></script>
   </body>
 </html>
