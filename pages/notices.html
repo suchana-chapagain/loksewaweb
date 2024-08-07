@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Notice Page</title>
     <link rel="stylesheet" href="notices.css" />
-    <link rel="stylesheet" href="../components/languageToggle.css"/>
+    <link rel="stylesheet" href="../components/languageToggle.css" />
 
     <link
       rel="icon"
@@ -29,13 +29,17 @@
     <div id="nav-placeholder"></div>
     <div id="langToggle-placeholder"></div>
     <div class="container">
-      <h1>Notices Page</h1>
+      <h1 data-en="Notices Page" data-ne="सूचनाहरू पृष्ठ">Notices Page</h1>
       <div class="upload-panel" style="display: none">
-        <h2>Upload Notice</h2>
+        <h2 data-en="Upload Notice" data-ne="सूचना अपलोड गर्नुहोस्">
+          Upload Notice
+        </h2>
         <form id="uploadForm">
-          <label for="title">Title:</label>
+          <label for="title" data-en="Title:" data-ne="शीर्षक:">Title:</label>
           <input type="text" id="title" name="title" required /><br /><br />
-          <label for="pdfFile">PDF File:</label>
+          <label for="pdfFile" data-en="PDF File:" data-ne="पीडीएफ फाइल:"
+            >PDF File:</label
+          >
           <input
             type="file"
             id="pdfFile"
@@ -43,15 +47,23 @@
             accept="application/pdf"
             required
           /><br /><br />
-          <input type="submit" value="Upload" />
+          <input
+            type="submit"
+            value="Upload"
+            data-en="Upload"
+            data-ne="अपलोड गर्नुहोस्"
+          />
         </form>
       </div>
 
       <div class="notices-panel">
-        <h2>Recent News and Notices</h2>
+        <h2 data-en="Recent News and Notices" data-ne="हालका समाचार र सूचनाहरू">
+          Recent News and Notices
+        </h2>
         <div id="noticeList"></div>
       </div>
     </div>
+
     <div id="footer-placeholder"></div>
     <script type="module">
       import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
@@ -90,16 +102,19 @@
       const auth = getAuth(app);
 
       onAuthStateChanged(auth, (user) => {
-            if (user) {
-                // Example condition to show the upload panel
-                if (user.email === 'acharyaanuj554@gmail.com' || user.email === 'suchanachapagain1@gmail.com') {
-                    document.querySelector(".upload-panel").style.display = "block";
-                }
-            } else {
-                // User is signed out
-                document.querySelector(".upload-panel").style.display = "none";
-            }
-        });
+        if (user) {
+          // Example condition to show the upload panel
+          if (
+            user.email === "acharyaanuj554@gmail.com" ||
+            user.email === "suchanachapagain1@gmail.com"
+          ) {
+            document.querySelector(".upload-panel").style.display = "block";
+          }
+        } else {
+          // User is signed out
+          document.querySelector(".upload-panel").style.display = "none";
+        }
+      });
 
       document
         .getElementById("uploadForm")

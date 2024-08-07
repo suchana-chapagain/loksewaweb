@@ -19,13 +19,13 @@
 <body>
   <div id="nav-placeholder"></div>
   <div id="langToggle-placeholder"></div>
-  <h1 id="selectMode">Select any one to continue:</h1>
-  <div class="studyContainer">
+  <h1 id="selectMode" data-en="Select any one to continue:" data-ne="कृपया एउटा छान्नुहोस् र अगाडि बढ्नुहोस्:">Select any one to continue:</h1>
+<div class="studyContainer">
   <div id="container">
     <div class="col-lg-3 col-xs-6">
       <div class="small-box bg-aqua">
         <div class="inner" id="modelDiv">
-          <h2 data-en="Study" data-ne="अध्ययन गर्नुहोस्">Model Question</h2>
+          <h2 data-en="Model Question" data-ne="मोडेल प्रश्न">Model Question</h2>
           <p data-en="Read and Prepare!" data-ne="पढ्नुहोस् र तयारी गर्नुहोस्!">Read and Prepare!</p>
         </div>
         <div class="icon">
@@ -36,8 +36,8 @@
     <div class="col-lg-3 col-xs-6">
       <div class="small-box bg-green">
         <div class="inner" id="gkDiv">
-          <h2 data-en="Practice" data-ne="अभ्यास गर्नुहोस्">General Knowledge</h2>
-          <p data-en="Make it Perfect!" data-ne="यसलाई पूर्ण बनाउनुस!">Make it Perfect!</p>
+          <h2 data-en="General Knowledge" data-ne="सामान्य ज्ञान">General Knowledge</h2>
+          <p data-en="Knowledge empowers, wisdom enlightens." data-ne="ज्ञानले शक्ति दिन्छ, बुद्धिले प्रकाश पुर्याउछ">Knowledge empowers, wisdom enlightens, grow.</p>
         </div>
         <div class="icon">
           <i class="fa fa-note-sticky"></i>
@@ -47,8 +47,8 @@
     <div class="col-lg-3 col-xs-6">
       <div class="small-box bg-yellow">
         <div class="inner" id="jobDiv">
-          <h2 data-en="News" data-ne="समाचार">Job-related Que.</h2>
-          <p data-en="Stay Updated!" data-ne="अद्यावधिक रहनुहोस्!">Stay Updated!</p>
+          <h2 data-en="Job-related Que." data-ne="रोजगारी सम्बन्धी प्रश्नहरू">Job-related Que.</h2>
+          <p data-en="Important Ones are Selected" data-ne="महत्त्वपूर्ण छनौट गरि राखिएको">Important Ones are Selected</p>
         </div>
         <div class="icon">
           <i class="fa fa-newspaper"></i>
@@ -64,40 +64,39 @@
       <span class="bottomLine common"></span>
     </label>
     <div class="slide" id="modelSlide">
-      <h2>Model Sets</h2>
+      <h2 data-en="Model Sets" data-ne="मोडेल सेटहरू">Model Sets</h2>
       <ul>
-        <li><a id="modelSelect1"><i class="fa-solid fa-list"></i>Model Set 1</a></li>
-        <li><a id="modelSelect2"><i class="fa-solid fa-list"></i>Model Set 2</a></li>
-        <li><a id="modelSelect3"><i class="fa-solid fa-list"></i>Model Set 3</a></li>
+        <li><a id="modelSelect1"><i class="fa-solid fa-list"></i> <span data-en="Model Set 1" data-ne="मोडेल सेट १">Model Set 1</span></a></li>
+        <li><a id="modelSelect2"><i class="fa-solid fa-list"></i> <span data-en="Model Set 2" data-ne="मोडेल सेट २">Model Set 2</span></a></li>
+        <li><a id="modelSelect3"><i class="fa-solid fa-list"></i> <span data-en="Model Set 3" data-ne="मोडेल सेट ३">Model Set 3</span></a></li>
       </ul>
     </div>
     <div class="slide" id="gkSlide">
-      <h2>GK Topics</h2>
+      <h2 data-en="GK Topics" data-ne="जीके विषयहरू">GK Topics</h2>
       <ul>
-        <li><a id="gkSelect1"><i class="fa-solid fa-list"></i>Topic 1</a></li>
-        <li><a id="gkSelect2"><i class="fa-solid fa-list"></i>Topic 2</a></li>
-        <li><a id="gkSelect3"><i class="fa-solid fa-list"></i>Topic 3</a></li>
+        <li><a id="gkSelect1"><i class="fa-solid fa-list"></i> <span data-en="Topic 1" data-ne="विषय १">Topic 1</span></a></li>
+        <li><a id="gkSelect2"><i class="fa-solid fa-list"></i> <span data-en="Topic 2" data-ne="विषय २">Topic 2</span></a></li>
+        <li><a id="gkSelect3"><i class="fa-solid fa-list"></i> <span data-en="Topic 3" data-ne="विषय ३">Topic 3</span></a></li>
       </ul>
     </div>
     <div class="slide" id="jobSlide">
-      <h2>Job Topics</h2>
+      <h2 data-en="Job Topics" data-ne="रोजगारी विषयहरू">Job Topics</h2>
       <ul>
-        <li><a id="jobSelect1"><i class="fa-solid fa-list"></i>Job Topic 1</a></li>
-        <li><a id="jobSelect2"><i class="fa-solid fa-list"></i>Job Topic 2</a></li>
-        <li><a id="jobSelect3"><i class="fa-solid fa-list"></i>Job Topic 3</a></li>
+        <li><a id="jobSelect1"><i class="fa-solid fa-list"></i> <span data-en="Job Topic 1" data-ne="रोजगारी विषय १">Job Topic 1</span></a></li>
+        <li><a id="jobSelect2"><i class="fa-solid fa-list"></i> <span data-en="Job Topic 2" data-ne="रोजगारी विषय २">Job Topic 2</span></a></li>
+        <li><a id="jobSelect3"><i class="fa-solid fa-list"></i> <span data-en="Job Topic 3" data-ne="रोजगारी विषय ३">Job Topic 3</span></a></li>
       </ul>
     </div>
+    
     <div class="content">
       <div class="pdf-viewer" id="pdf-viewer">
         <div class="top-bar">
-          <button class="btn prev-page">
+          <button class="btn prev-page" data-en="Prev Page" data-ne="अघिल्लो पृष्ठ">
             <i class="fas fa-arrow-circle-left"></i> <span>Prev Page</span>
           </button>
-          <span class="page-info">
-            Page <span class="page-num"></span> of <span class="page-count"></span>
-          </span>
-          <button class="btn next-page">
-          <span>Next Page</span> <i class="fas fa-arrow-circle-right"></i>
+          <span class="page-info">Page <span class="page-num"></span> of <span class="page-count"></span></span>
+          <button class="btn next-page" data-en="Next Page" data-ne="अर्को पृष्ठ">
+            <span>Next Page</span> <i class="fas fa-arrow-circle-right"></i>
           </button>
         </div>
         <canvas class="pdf-render"></canvas>
@@ -105,6 +104,7 @@
     </div>
   </div>
 </div>
+
   <div id="footer-placeholder"></div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js" integrity="sha512-Z8CqofpIcnJN80feS2uccz+pXWgZzeKxDsDNMD/dJ6997/LSRY+W4NmEt9acwR+Gt9OHN0kkI1CTianCwoqcjQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="pdfViewer.js"></script>

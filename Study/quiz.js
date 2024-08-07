@@ -140,7 +140,6 @@ function startTimerLine(time){
     counterLine = setInterval(timer, 29);
     function timer(){
         time += 1; 
-        time_line.style.width = time + "px"; 
         if(time > 549){ 
             clearInterval(counterLine); 
         }
