@@ -2,17 +2,18 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 
 .logoSection {
-  height: 150px !important;
+  height: 130px !important;
+  box-sizing: content-box !important;
 }
 
 @media screen and (max-width: 1280px) {
   .logoSection {
-    height: 160px !important;
+    height: 130px !important;
   }
 
   .nav-links {
@@ -23,7 +24,7 @@
 
 @media screen and (max-width: 480px) {
   .logoSection {
-    height: 110px !important;
+    height: 80px !important;
   }
 
   .nav-links {
@@ -32,6 +33,7 @@
   }
 }
 .container {
+  box-sizing: border-box !important;
   padding-top: 50px;
   height: 100vh;
   width: 100%;
@@ -80,6 +82,7 @@ form {
 }
 .field input,
 .field button {
+  box-sizing: border-box;
   height: 100%;
   width: 100%;
   border: none;
@@ -261,10 +264,11 @@ a.google span {
   .small-box h3, .small-box p {
       z-index: 5;
   }
-  .small-box p {
+  .small-box > p {
       font-size: 15px;
   }
-  p {
+
+  .small-box p {
       margin: 0 0 10px;
   }
   .small-box .icon {
@@ -315,6 +319,12 @@ a.google span {
     align-items: center;
     justify-content: center;
     }
+  }
+
+  @media (max-width: 480px){
+    #container > div{
+      width: 20rem;
+  }
   }
 
 #signOut {

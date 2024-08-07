@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+.logoSection {
+    height: 150px !important;
+  }
+  
+  @media screen and (max-width: 1280px) {
+    .logoSection {
+      height: 160px !important;
+    }
+  
+    .nav-links {
+      width: 100% !important;
+      z-index: 999 !important;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .logoSection {
+      height: 110px !important;
+    }
+  
+    .nav-links {
+      width: 100% !important;
+      z-index: 999 !important;
+    }
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .container > h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .upload-panel, .notices-panel {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fafafa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+  }
+  
+  .upload-panel > h2, .notices-panel > h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+  }
+  
+  #uploadForm label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  #uploadForm input[type="text"], #uploadForm input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #000;
+  }
+  
+  #uploadForm input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #uploadForm input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .notice {
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .notice > h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .notice .date {
+    margin: 10px 0;
+    color: #666;
+  }
+  
+  .notice a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .notice a:hover {
+    background-color: #0056b3;
+  }
+  
