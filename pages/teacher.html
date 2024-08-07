@@ -1,11 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Teacher Service</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="teacher.css">
+    <link rel="icon" type="image/favicon" href="../assets/Website Logo White.png">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+  <link rel="stylesheet" href="../components/nav.css" />
+  <link rel="stylesheet" href="../components/footer.css" />
+  <link rel="stylesheet" href="../components/languageToggle.css" />
+  <!-- JQuery Script -->
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+  <body>
+    <div id="nav-placeholder"></div>
+  <div id="langToggle-placeholder"></div>
+    <div class="selectContainer">
+      <h1
+        id="selectMode"
+        data-en="Select any one to continue:"
+        data-ne="कृपया एउटा छान्नुहोस् र अगाडि बढ्नुहोस्:"
+      >
+        Select any one to continue:
+      </h1>
+      <div id="container">
+        <div class="col-lg-3 col-xs-6">
+          <div class="small-box bg-aqua">
+            <div class="inner" id="primaryDiv">
+              <h2 data-en="Primary Level" data-ne="प्राथमिक विद्यालय">
+                Primary Level
+              </h2>
+              <p
+                data-en="Practice Set for Primary"
+                data-ne="प्राथमिकको अभ्यास सेट"
+              >
+                Practice Set for Primary
+              </p>
+            </div>
+            <div class="icon">
+              <i class="fa fa-book"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-xs-6">
+          <div class="small-box bg-green">
+            <div class="inner" id="lowerSecDiv">
+              <h2 data-en="Lower Sec. Level" data-ne="निम्न माध्यमिक विद्यालय">
+                Lower Sec. Level
+              </h2>
+              <p
+              data-en="Practice Set for Lower Sec."
+              data-ne="नि.मा.वि को अभ्यास सेट"
+              >
+              Practice Set for Lower Sec.
+              </p>
+            </div>
+            <div class="icon">
+              <i class="fa fa-note-sticky"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-xs-6">
+          <div class="small-box bg-yellow">
+            <div class="inner" id="secDiv">
+              <h2
+              data-en="Secondary Level"
+              data-ne="माध्यमिक विद्यालय"
+              >
+                Secondary Level
+              </h2>
+              <p
+              data-en="Practice Set for Secondary"
+              data-ne="मा.वि को अभ्यास सेट"
+              >
+                Practice Set for Secondary
+              </p>
+            </div>
+            <div class="icon">
+              <i class="fa fa-newspaper"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer-placeholder"></div>
+    <script src="../component.js"></script>
+    <script>
+        const primaryDiv = document.querySelector("#primaryDiv");
+        const lowerSecDiv = document.querySelector("#lowerSecDiv");
+        const secDiv = document.querySelector("#secDiv");
+
+        primaryDiv.addEventListener('click', function(){
+            window.open("../Practice/pra.html");
+        });
+
+        lowerSecDiv.addEventListener('click', function(){
+            window.open("../Practice/lows.html");
+        });
+
+        secDiv.addEventListener('click', function(){
+            window.open("../Practice/sec.html");
+        });
+    </script>
+  </body>
 </html>
