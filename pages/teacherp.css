@@ -60,7 +60,7 @@
   .alert-info,
   .label-info,
   .modal-info .modal-body {
-    background-color: #00ef50 !important;
+    background-color: #00ef50ca !important;
   }
   
   .bg-yellow,
@@ -68,7 +68,7 @@
   .alert-info,
   .label-info,
   .modal-info .modal-body {
-    background-color: #b3ef00 !important;
+    background-color: #b3ef00d0 !important;
   }
   
   .bg-green,
@@ -76,7 +76,7 @@
   .alert-info,
   .label-info,
   .modal-info .modal-body {
-    background-color: #00c0ef !important;
+    background-color: #00bfefd2 !important;
   }
   
   .bg-red,
