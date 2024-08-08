@@ -19,6 +19,7 @@
 
 .recent-news {
   height: 30px;
+  width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,6 +27,10 @@
   background-color: whitesmoke;
   border-radius: 8px;
   color: chocolate;
+}
+
+.recent-news > h3{
+  font-size: 14px;
 }
 
 .vertical-line {

@@ -35,7 +35,7 @@
   }
 
 body{
-    background: #f4f4f4;
+    background: rgba(0, 0, 0, 0.871);
     display: block;
     font-family: 'Poppins', sans-serif;
 }
