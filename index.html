@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="/components/nav.css" />
     <link rel="stylesheet" href="/components/footer.css" />
+    <link rel="stylesheet" href="/components/languageToggle.css"/>
     <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
 
     <!--JQuery Script-->
@@ -37,11 +38,12 @@
   <body>
     <div class="container">
       <div id="nav-placeholder"></div>
+      <div id="langToggle-placeholder"></div>
       <header>
         <div class="heroText">
           <h1
             data-en="Dive into learning, the depths are full of treasures!"
-            data-ne="पढाईमा लाग्नुहोस्, गहिराइमा खजाना भरिएको छ!"
+            data-ne="शिक्षा भनेको एउटा अमूल्य सम्पत्ति हो, जसले जीवनलाई उज्यालो बनाउँछ।"
           >
             Dive into learning, the depths are full of treasures!
           </h1>
@@ -402,19 +404,6 @@
 
     <!--Language Toggle Script-->
     <script src="languageToggle.js" defer></script>
-
-    <script>
-      document.getElementById('language-checkbox').addEventListener('change', function() {
-          if (this.checked) {
-              // Code to switch to Nepali
-              document.body.classList.add('nepali');
-              document.body.classList.remove('english');
-          } else {
-              // Code to switch to English
-              document.body.classList.add('english');
-              document.body.classList.remove('nepali');
-          }
-      });
   </script>
   </body>
 </html>
